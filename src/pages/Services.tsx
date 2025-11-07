@@ -1,8 +1,10 @@
 import { Building2, Calculator, FileText, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const services = [
@@ -56,9 +58,9 @@ const Services = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">Servicios</h1>
+          <h1 className="text-5xl font-bold mb-4">{t('services.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Soluciones profesionales para impulsar tu éxito en inversión inmobiliaria
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -89,29 +91,17 @@ const Services = () => {
         </div>
 
         <div className="text-center bg-muted/30 rounded-2xl p-12 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">¿Interesado en algún servicio?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('services.ctaTitle')}</h2>
           <p className="text-muted-foreground mb-8">
-            Contacta conmigo para una consulta inicial gratuita y descubre cómo puedo ayudarte
+            {t('services.ctaDesc')}
           </p>
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="text-left">
-                <p className="text-sm text-muted-foreground">Email</p>
-                <p className="font-medium">julian.jfc@gmail.com</p>
-              </div>
-              <div className="text-left">
-                <p className="text-sm text-muted-foreground">Teléfono</p>
-                <p className="font-medium">+34 660 03 42 38</p>
-              </div>
-            </div>
-            <Button
-              size="lg"
-              onClick={() => navigate('/contacto')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
-            >
-              Solicitar información
-            </Button>
-          </div>
+          <Button
+            size="lg"
+            onClick={() => navigate('/contacto')}
+            className="bg-accent hover:bg-accent/90 text-accent-foreground"
+          >
+            {t('services.ctaButton')}
+          </Button>
         </div>
       </div>
     </div>

@@ -2,8 +2,10 @@ import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const Resources = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [email, setEmail] = useState("");
 
@@ -53,16 +55,16 @@ const Resources = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">Recursos Gratuitos</h1>
+          <h1 className="text-5xl font-bold mb-4">{t('resources.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Descarga plantillas, modelos y herramientas prácticas para tu inversión inmobiliaria
+            {t('resources.subtitle')}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 mb-8">
             <p className="text-center text-lg mb-4">
-              Introduce tu email para acceder a las descargas gratuitas
+              {t('resources.emailPrompt')}
             </p>
             <div className="flex gap-4 max-w-md mx-auto">
               <input
@@ -102,7 +104,7 @@ const Resources = () => {
                       className="gap-2"
                     >
                       <Download className="h-4 w-4" />
-                      Descargar
+                      {t('resources.download')}
                     </Button>
                   </div>
                 </div>
@@ -112,12 +114,12 @@ const Resources = () => {
         </div>
 
         <div className="text-center bg-muted/30 rounded-2xl p-8 max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4">¿Necesitas más recursos?</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('resources.newsletterTitle')}</h2>
           <p className="text-muted-foreground mb-6">
-            Suscríbete a mi newsletter para recibir contenido exclusivo, consejos y nuevos recursos cada semana
+            {t('resources.newsletterDesc')}
           </p>
           <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            Suscribirme a la newsletter
+            {t('resources.newsletterButton')}
           </Button>
         </div>
       </div>

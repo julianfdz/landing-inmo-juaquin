@@ -1,6 +1,8 @@
 import { Calendar, Tag } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+  const { t } = useTranslation();
   const categories = ["Compra", "Hipoteca", "Venta", "Alquiler"];
   
   const posts = [
@@ -38,16 +40,16 @@ const Blog = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">Blog</h1>
+          <h1 className="text-5xl font-bold mb-4">{t('blog.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Artículos, consejos y experiencias sobre inversión inmobiliaria
+            {t('blog.subtitle')}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="flex gap-3 mb-12 flex-wrap justify-center">
             <button className="px-4 py-2 rounded-full bg-accent text-accent-foreground font-medium">
-              Todos
+              {t('blog.all')}
             </button>
             {categories.map((category) => (
               <button
@@ -89,7 +91,7 @@ const Blog = () => {
 
           <div className="text-center mt-12">
             <p className="text-muted-foreground">
-              Próximamente más artículos...
+              {t('blog.comingSoon')}
             </p>
           </div>
         </div>

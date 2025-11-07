@@ -1,6 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import libro1 from "@/assets/libro1.jpeg";
+import libro2 from "@/assets/libro2.jpeg";
+import libro3 from "@/assets/libro3.jpeg";
 
 const BooksSection = () => {
   const { t } = useTranslation();
@@ -9,17 +12,20 @@ const BooksSection = () => {
     {
       title: "Inversión Inmobiliaria desde Cero",
       description: "Aprende a invertir en bienes raíces con presupuestos bajos. Estrategias prácticas para dar tus primeros pasos en el mercado.",
-      amazonUrl: "https://www.amazon.es"
+      amazonUrl: "https://www.amazon.es",
+      image: libro1
     },
     {
       title: "Airbnb y Pisos Turísticos Rentables",
       description: "Cómo transformar inmuebles en negocios altamente rentables con alquileres vacacionales. Casos reales y plantillas.",
-      amazonUrl: "https://www.amazon.es"
+      amazonUrl: "https://www.amazon.es",
+      image: libro2
     },
     {
       title: "Compra, Reforma y Vende",
       description: "La guía definitiva del house flipping: detectar oportunidades, calcular rentabilidades, gestionar reformas y maximizar beneficios.",
-      amazonUrl: "https://www.amazon.es"
+      amazonUrl: "https://www.amazon.es",
+      image: libro3
     }
   ];
 
@@ -38,10 +44,12 @@ const BooksSection = () => {
               className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-card transition-all duration-300 hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="aspect-[3/4] bg-gradient-to-br from-muted via-background to-muted flex items-center justify-center p-8">
-                <div className="w-full h-full border-2 border-accent/20 rounded-lg flex items-center justify-center">
-                  <span className="text-6xl font-bold text-accent/30">📚</span>
-                </div>
+              <div className="aspect-[3/4] overflow-hidden">
+                <img 
+                  src={book.image} 
+                  alt={book.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-bold">{book.title}</h3>

@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -21,11 +23,11 @@ const Contact = () => {
       `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje:\n${formData.message}`
     );
     
-    window.location.href = `mailto:julian.jfc@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contacto@Tunegocioinmobiliario.com?subject=${subject}&body=${body}`;
     
     toast({
-      title: "¡Mensaje enviado!",
-      description: "Te responderé lo antes posible"
+      title: t('contact.successTitle'),
+      description: t('contact.successDesc')
     });
 
     setFormData({ name: "", email: "", phone: "", message: "" });
@@ -35,19 +37,18 @@ const Contact = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4">Contacto</h1>
+          <h1 className="text-5xl font-bold mb-4">{t('contact.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            ¿Tienes dudas o quieres empezar tu proyecto? Estoy aquí para ayudarte
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Hablemos de tu proyecto</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('contact.formTitle')}</h2>
               <p className="text-muted-foreground mb-8">
-                Rellena el formulario y me pondré en contacto contigo en menos de 24 horas.
-                También puedes escribirme directamente por email o WhatsApp.
+                {t('contact.formDesc')}
               </p>
             </div>
 
@@ -59,10 +60,10 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold mb-1">Email</h3>
                   <a
-                    href="mailto:julian.jfc@gmail.com"
+                    href="mailto:contacto@Tunegocioinmobiliario.com"
                     className="text-muted-foreground hover:text-accent transition-colors"
                   >
-                    julian.jfc@gmail.com
+                    contacto@Tunegocioinmobiliario.com
                   </a>
                 </div>
               </div>
@@ -88,7 +89,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Nombre completo *
+                  {t('contact.name')} *
                 </label>
                 <input
                   type="text"
@@ -102,7 +103,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Email *
+                  {t('contact.email')} *
                 </label>
                 <input
                   type="email"
@@ -116,7 +117,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Teléfono (opcional)
+                  {t('contact.phone')}
                 </label>
                 <input
                   type="tel"
@@ -129,7 +130,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Mensaje *
+                  {t('contact.message')} *
                 </label>
                 <textarea
                   required
@@ -147,7 +148,7 @@ const Contact = () => {
                 size="lg"
               >
                 <Send className="h-5 w-5" />
-                Enviar mensaje
+                {t('contact.send')}
               </Button>
             </form>
           </div>

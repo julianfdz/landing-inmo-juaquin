@@ -33,7 +33,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="text-2xl font-bold text-foreground">
-            JOAQUIN
+            TuNegocioInmobiliario<span className="text-sm font-normal text-muted-foreground">.com</span>
           </Link>
 
           {/* Desktop Navigation */}

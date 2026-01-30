@@ -84,36 +84,37 @@ Este volumen forma parte de la colección Tu Negocio Inmobiliario, una serie de 
             <p className="text-xl text-muted-foreground">{t('books.subtitle')}</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {books.map((book, index) => (
               <div
                 key={index}
-                className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-card transition-all duration-300 hover:-translate-y-2 animate-fade-in group cursor-pointer"
+                className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-in group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setSelectedBook(book)}
               >
-                <div className="overflow-hidden">
+                <div className="aspect-[4/5] overflow-hidden bg-muted/50">
                   <img 
                     src={book.image} 
                     alt={book.title}
-                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-5 space-y-3">
-                  <h3 className="text-lg font-bold leading-tight">{book.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                <div className="p-4 space-y-2">
+                  <h3 className="text-sm font-bold leading-tight line-clamp-2">{book.title}</h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
                     {book.shortDescription}
                   </p>
                   <Button
                     variant="outline"
-                    className="w-full gap-2"
+                    size="sm"
+                    className="w-full gap-2 text-xs"
                     onClick={(e) => {
                       e.stopPropagation();
                       window.open(book.amazonUrl, '_blank');
                     }}
                   >
                     {t('books.cta')}
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
                   </Button>
                 </div>
               </div>

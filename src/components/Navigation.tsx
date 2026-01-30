@@ -60,10 +60,13 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem onClick={() => changeLanguage('es')}>
-                  Español
+                  🇪🇸 Español
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                  English
+                  🇬🇧 English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('de')}>
+                  🇩🇪 Deutsch
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -101,14 +104,21 @@ const Navigation = () => {
                 size="sm"
                 onClick={() => changeLanguage('es')}
               >
-                ES
+                🇪🇸 ES
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => changeLanguage('en')}
               >
-                EN
+                🇬🇧 EN
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => changeLanguage('de')}
+              >
+                🇩🇪 DE
               </Button>
             </div>
           </div>

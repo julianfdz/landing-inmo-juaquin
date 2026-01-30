@@ -49,12 +49,13 @@ const BooksSection = () => {
               className="bg-card rounded-lg border border-border overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="aspect-[4/4] overflow-hidden bg-muted/50">
+              <div className="aspect-[4/4] overflow-hidden bg-muted/50 relative">
                 <img 
                   src={book.image} 
                   alt={book.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-background/20 to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-300" />
               </div>
               <div className="p-4 space-y-3">
                 <h3 className="text-sm font-bold leading-tight line-clamp-2">{book.title}</h3>

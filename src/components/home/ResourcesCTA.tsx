@@ -55,7 +55,7 @@ const ResourcesCTA = () => {
 
           <Button
             size="lg"
-            onClick={() => navigate("/resources")}
+            onClick={() => navigate("/recursos")}
             className="gap-2 text-lg px-8"
           >
             Ver todos los recursos

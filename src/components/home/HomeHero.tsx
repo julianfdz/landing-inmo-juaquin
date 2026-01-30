@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import logoTni from "@/assets/logo-tni.png";
 
 const HomeHero = () => {
   const { t } = useTranslation();
@@ -38,14 +39,12 @@ const HomeHero = () => {
         <div className="relative animate-slide-in">
           <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl rounded-full" />
           <div className="relative bg-card/50 backdrop-blur-sm p-12 rounded-2xl border border-border shadow-card">
-            <div className="aspect-square bg-gradient-to-br from-muted to-background rounded-xl flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-accent/10 rounded-full flex items-center justify-center">
-                  <span className="text-4xl font-bold text-accent">JQ</span>
-                </div>
-                <p className="text-2xl font-semibold">Joaquín</p>
-                <p className="text-muted-foreground">Experto en Inversión Inmobiliaria</p>
-              </div>
+            <div className="aspect-square bg-gradient-to-br from-muted to-background rounded-xl flex items-center justify-center p-8">
+              <img 
+                src={logoTni} 
+                alt="Tu Negocio Inmobiliario" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>

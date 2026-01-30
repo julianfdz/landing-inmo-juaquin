@@ -42,18 +42,18 @@ const BooksSection = () => {
           <p className="text-xl text-muted-foreground">{t('books.subtitle')}</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {books.map((book, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-in group"
+              className="bg-card rounded-lg border border-border overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="aspect-[4/5] overflow-hidden bg-muted/50">
+              <div className="aspect-[4/4] overflow-hidden bg-muted/50">
                 <img 
                   src={book.image} 
                   alt={book.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-4 space-y-3">

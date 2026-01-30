@@ -36,17 +36,13 @@ const HomeHero = () => {
           </Button>
         </div>
 
-        <div className="relative animate-slide-in">
+        <div className="relative animate-slide-in flex items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl rounded-full" />
-          <div className="relative bg-card/50 backdrop-blur-sm p-12 rounded-2xl border border-border shadow-card">
-            <div className="aspect-square bg-gradient-to-br from-muted to-background rounded-xl flex items-center justify-center p-8">
-              <img 
-                src={logoTni} 
-                alt="Tu Negocio Inmobiliario" 
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
+          <img 
+            src={logoTni} 
+            alt="Tu Negocio Inmobiliario" 
+            className="relative z-10 w-full max-w-md md:max-w-lg object-contain drop-shadow-xl"
+          />
         </div>
       </div>
     </section>

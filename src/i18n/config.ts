@@ -21,7 +21,8 @@ const resources = {
       books: {
         title: 'Mis Libros',
         subtitle: 'Guías prácticas para inversores inmobiliarios',
-        cta: 'Ver en Amazon'
+        cta: 'Ver en Amazon',
+        moreInfo: 'Más info'
       },
       quote: {
         text: 'No esperes para comprar bienes raíces. Compra bienes raíces y espera.',
@@ -100,7 +101,8 @@ const resources = {
       books: {
         title: 'My Books',
         subtitle: 'Practical guides for real estate investors',
-        cta: 'View on Amazon'
+        cta: 'View on Amazon',
+        moreInfo: 'More info'
       },
       quote: {
         text: "Don't wait to buy real estate. Buy real estate and wait.",

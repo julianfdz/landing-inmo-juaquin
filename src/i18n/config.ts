@@ -161,6 +161,86 @@ const resources = {
         successDesc: 'I will respond as soon as possible'
       }
     }
+  },
+  de: {
+    translation: {
+      nav: {
+        home: 'Startseite',
+        about: 'Über mich',
+        services: 'Dienstleistungen',
+        resources: 'Ressourcen',
+        blog: 'Blog',
+        contact: 'Kontakt'
+      },
+      hero: {
+        title: 'Investieren Sie in Immobilien',
+        titleBold: 'mit Vertrauen',
+        subtitle: 'Entdecken Sie meine Buchsammlung über Immobilieninvestitionen und greifen Sie auf praktische Ressourcen, Vorlagen und persönliche Beratung zu, um den nächsten Schritt zu machen.',
+        cta: 'Meine Bücher entdecken'
+      },
+      books: {
+        title: 'Meine Bücher',
+        subtitle: 'Praktische Leitfäden für Immobilieninvestoren',
+        cta: 'Auf Amazon ansehen',
+        moreInfo: 'Mehr Info'
+      },
+      quote: {
+        text: 'Warten Sie nicht, um Immobilien zu kaufen. Kaufen Sie Immobilien und warten Sie.',
+        author: 'Will Rogers'
+      },
+      finalCta: {
+        title: 'Beginnen Sie heute Ihren Weg zur profitablen Immobilieninvestition',
+        button: 'Kontaktieren Sie mich'
+      },
+      about: {
+        title: 'Über mich',
+        subtitle: 'Immobilienvermögen von Grund auf aufbauen',
+        intro1: 'Ich bin <strong>Joaquín</strong>, Spezialist für Immobilieninvestitionen mit über 10 Jahren Erfahrung in der Branche. Meine Reise begann mit einer einfachen Frage: Wie kann ich passives Einkommen generieren, ohne große Anfangskapitalien zu benötigen?',
+        intro2: 'Im Laufe meiner Karriere habe ich Hunderten von Menschen geholfen, ihre ersten Schritte in der Welt der Immobilieninvestitionen zu machen und <strong>hohe Rentabilität auch mit niedrigen Budgets</strong> zu erzielen. Mein Ansatz konzentriert sich auf praktische und replizierbare Strategien wie Airbnb, Ferienvermietungen, Kaufen-Renovieren-Verkaufen (House Flipping) und effiziente Immobilienverwaltung.',
+        intro3: 'Ich habe mehrere <strong>praktische Bücher</strong> veröffentlicht, in denen ich Schritt für Schritt erkläre, wie man sicher und profitabel investiert und meine echte Markterfahrung teile. Meine Mission ist es, den Zugang zu Immobilieninvestitionen zu demokratisieren und zu zeigen, dass jeder mit der richtigen Ausbildung und den richtigen Strategien ein solides Vermögen aufbauen kann.',
+        experienceTitle: 'Meine Erfahrung umfasst:',
+        exp1: '+50 verwaltete Immobilien im Airbnb- und Ferienvermietungsbereich',
+        exp2: '+20 erfolgreich abgeschlossene House-Flipping-Projekte',
+        exp3: 'Schulung von über 300 Anfängerinvestoren',
+        exp4: 'Autor mehrerer Leitfäden zur Immobilieninvestition'
+      },
+      services: {
+        title: 'Dienstleistungen',
+        subtitle: 'Professionelle Lösungen zur Förderung Ihres Erfolgs bei Immobilieninvestitionen',
+        ctaTitle: 'Interesse an einer Dienstleistung?',
+        ctaDesc: 'Kontaktieren Sie mich für eine kostenlose Erstberatung und erfahren Sie, wie ich Ihnen helfen kann',
+        ctaButton: 'Kontaktieren Sie mich'
+      },
+      resources: {
+        title: 'Kostenlose Ressourcen',
+        subtitle: 'Laden Sie Vorlagen, Modelle und praktische Tools für Ihre Immobilieninvestition herunter',
+        emailPrompt: 'Geben Sie Ihre E-Mail ein, um auf kostenlose Downloads zuzugreifen',
+        download: 'Herunterladen',
+        newsletterTitle: 'Brauchen Sie mehr Ressourcen?',
+        newsletterDesc: 'Abonnieren Sie meinen Newsletter, um exklusive Inhalte, Tipps und jede Woche neue Ressourcen zu erhalten',
+        newsletterButton: 'Newsletter abonnieren'
+      },
+      blog: {
+        title: 'Blog',
+        subtitle: 'Artikel, Tipps und Erfahrungen über Immobilieninvestitionen',
+        all: 'Alle',
+        readMore: 'Weiterlesen',
+        comingSoon: 'Weitere Artikel folgen...'
+      },
+      contact: {
+        title: 'Kontakt',
+        subtitle: 'Haben Sie Fragen oder möchten Sie Ihr Projekt starten? Ich bin hier, um zu helfen',
+        formTitle: 'Lassen Sie uns über Ihr Projekt sprechen',
+        formDesc: 'Füllen Sie das Formular aus und ich werde mich innerhalb von 24 Stunden bei Ihnen melden. Sie können mir auch direkt per E-Mail oder WhatsApp schreiben.',
+        name: 'Vollständiger Name',
+        email: 'E-Mail',
+        phone: 'Telefon (optional)',
+        message: 'Nachricht',
+        send: 'Nachricht senden',
+        successTitle: 'Nachricht gesendet!',
+        successDesc: 'Ich werde so schnell wie möglich antworten'
+      }
+    }
   }
 };
 

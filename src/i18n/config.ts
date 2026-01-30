@@ -49,7 +49,39 @@ const resources = {
         subtitle: 'Soluciones profesionales para impulsar tu éxito en inversión inmobiliaria',
         ctaTitle: '¿Interesado en algún servicio?',
         ctaDesc: 'Contacta conmigo para una consulta inicial gratuita y descubre cómo puedo ayudarte',
-        ctaButton: 'Contáctame'
+        ctaButton: 'Contáctame',
+        service1: {
+          title: 'Asesoría en Inversión Inmobiliaria',
+          description: 'Te ayudo a identificar oportunidades de inversión, analizar rentabilidades y crear estrategias personalizadas según tu presupuesto y objetivos.',
+          feature1: 'Análisis de mercado y zonas rentables',
+          feature2: 'Estrategias de compra e inversión',
+          feature3: 'Gestión de Airbnb y pisos turísticos',
+          feature4: 'House flipping y reformas rentables'
+        },
+        service2: {
+          title: 'Asesoría Fiscal y Contable',
+          description: 'Servicios especializados de asesoría fiscal y contable para optimizar la gestión de tus inversiones inmobiliarias.',
+          feature1: 'Declaraciones fiscales optimizadas',
+          feature2: 'Planificación tributaria',
+          feature3: 'Gestión contable de propiedades',
+          feature4: 'Asesoramiento en deducciones'
+        },
+        service3: {
+          title: 'Mentorías Personalizadas',
+          description: 'Sesiones individuales donde te guío paso a paso en tu proyecto de inversión inmobiliaria, desde cero hasta tu primera propiedad rentable.',
+          feature1: 'Sesiones 1 a 1 online o presencial',
+          feature2: 'Plan de acción personalizado',
+          feature3: 'Seguimiento de proyectos',
+          feature4: 'Acceso a recursos exclusivos'
+        },
+        service4: {
+          title: 'Formación y Cursos',
+          description: 'Programas formativos completos sobre inversión inmobiliaria, desde nivel inicial hasta estrategias avanzadas de rentabilidad.',
+          feature1: 'Cursos online y presenciales',
+          feature2: 'Material didáctico exclusivo',
+          feature3: 'Casos prácticos reales',
+          feature4: 'Comunidad de inversores'
+        }
       },
       resources: {
         title: 'Recursos Gratuitos',
@@ -129,7 +161,39 @@ const resources = {
         subtitle: 'Professional solutions to boost your success in real estate investment',
         ctaTitle: 'Interested in any service?',
         ctaDesc: 'Contact me for a free initial consultation and discover how I can help you',
-        ctaButton: 'Contact me'
+        ctaButton: 'Contact me',
+        service1: {
+          title: 'Real Estate Investment Advisory',
+          description: 'I help you identify investment opportunities, analyze returns and create personalized strategies according to your budget and goals.',
+          feature1: 'Market and profitable areas analysis',
+          feature2: 'Purchase and investment strategies',
+          feature3: 'Airbnb and vacation rental management',
+          feature4: 'House flipping and profitable renovations'
+        },
+        service2: {
+          title: 'Tax and Accounting Advisory',
+          description: 'Specialized tax and accounting advisory services to optimize the management of your real estate investments.',
+          feature1: 'Optimized tax returns',
+          feature2: 'Tax planning',
+          feature3: 'Property accounting management',
+          feature4: 'Deduction advice'
+        },
+        service3: {
+          title: 'Personalized Mentoring',
+          description: 'Individual sessions where I guide you step by step in your real estate investment project, from scratch to your first profitable property.',
+          feature1: 'One-on-one sessions online or in person',
+          feature2: 'Personalized action plan',
+          feature3: 'Project tracking',
+          feature4: 'Access to exclusive resources'
+        },
+        service4: {
+          title: 'Training and Courses',
+          description: 'Complete training programs on real estate investment, from beginner level to advanced profitability strategies.',
+          feature1: 'Online and in-person courses',
+          feature2: 'Exclusive educational material',
+          feature3: 'Real practical cases',
+          feature4: 'Investor community'
+        }
       },
       resources: {
         title: 'Free Resources',
@@ -209,7 +273,39 @@ const resources = {
         subtitle: 'Professionelle Lösungen zur Förderung Ihres Erfolgs bei Immobilieninvestitionen',
         ctaTitle: 'Interesse an einer Dienstleistung?',
         ctaDesc: 'Kontaktieren Sie mich für eine kostenlose Erstberatung und erfahren Sie, wie ich Ihnen helfen kann',
-        ctaButton: 'Kontaktieren Sie mich'
+        ctaButton: 'Kontaktieren Sie mich',
+        service1: {
+          title: 'Immobilieninvestitionsberatung',
+          description: 'Ich helfe Ihnen, Investitionsmöglichkeiten zu identifizieren, Renditen zu analysieren und personalisierte Strategien nach Ihrem Budget und Ihren Zielen zu erstellen.',
+          feature1: 'Markt- und rentable Gebietsanalyse',
+          feature2: 'Kauf- und Investitionsstrategien',
+          feature3: 'Airbnb- und Ferienvermietungsmanagement',
+          feature4: 'House Flipping und rentable Renovierungen'
+        },
+        service2: {
+          title: 'Steuer- und Buchhaltungsberatung',
+          description: 'Spezialisierte Steuer- und Buchhaltungsberatung zur Optimierung der Verwaltung Ihrer Immobilieninvestitionen.',
+          feature1: 'Optimierte Steuererklärungen',
+          feature2: 'Steuerplanung',
+          feature3: 'Immobilienbuchhaltung',
+          feature4: 'Abzugsberatung'
+        },
+        service3: {
+          title: 'Personalisiertes Mentoring',
+          description: 'Einzelsitzungen, in denen ich Sie Schritt für Schritt bei Ihrem Immobilieninvestitionsprojekt begleite, von Null bis zu Ihrer ersten rentablen Immobilie.',
+          feature1: 'Einzelsitzungen online oder persönlich',
+          feature2: 'Personalisierter Aktionsplan',
+          feature3: 'Projektverfolgung',
+          feature4: 'Zugang zu exklusiven Ressourcen'
+        },
+        service4: {
+          title: 'Schulung und Kurse',
+          description: 'Komplette Schulungsprogramme für Immobilieninvestitionen, vom Anfängerniveau bis zu fortgeschrittenen Rentabilitätsstrategien.',
+          feature1: 'Online- und Präsenzkurse',
+          feature2: 'Exklusives Lehrmaterial',
+          feature3: 'Echte praktische Fälle',
+          feature4: 'Investorengemeinschaft'
+        }
       },
       resources: {
         title: 'Kostenlose Ressourcen',

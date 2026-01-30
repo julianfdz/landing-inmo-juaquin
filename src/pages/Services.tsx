@@ -10,46 +10,46 @@ const Services = () => {
   const services = [
     {
       icon: Building2,
-      title: "Asesoría en Inversión Inmobiliaria",
-      description: "Te ayudo a identificar oportunidades de inversión, analizar rentabilidades y crear estrategias personalizadas según tu presupuesto y objetivos.",
-      features: [
-        "Análisis de mercado y zonas rentables",
-        "Estrategias de compra e inversión",
-        "Gestión de Airbnb y pisos turísticos",
-        "House flipping y reformas rentables"
+      titleKey: "services.service1.title",
+      descriptionKey: "services.service1.description",
+      featuresKeys: [
+        "services.service1.feature1",
+        "services.service1.feature2",
+        "services.service1.feature3",
+        "services.service1.feature4"
       ]
     },
     {
       icon: Calculator,
-      title: "Asesoría Fiscal y Contable",
-      description: "Servicios especializados de asesoría fiscal y contable para optimizar la gestión de tus inversiones inmobiliarias.",
-      features: [
-        "Declaraciones fiscales optimizadas",
-        "Planificación tributaria",
-        "Gestión contable de propiedades",
-        "Asesoramiento en deducciones"
+      titleKey: "services.service2.title",
+      descriptionKey: "services.service2.description",
+      featuresKeys: [
+        "services.service2.feature1",
+        "services.service2.feature2",
+        "services.service2.feature3",
+        "services.service2.feature4"
       ]
     },
     {
       icon: FileText,
-      title: "Mentorías Personalizadas",
-      description: "Sesiones individuales donde te guío paso a paso en tu proyecto de inversión inmobiliaria, desde cero hasta tu primera propiedad rentable.",
-      features: [
-        "Sesiones 1 a 1 online o presencial",
-        "Plan de acción personalizado",
-        "Seguimiento de proyectos",
-        "Acceso a recursos exclusivos"
+      titleKey: "services.service3.title",
+      descriptionKey: "services.service3.description",
+      featuresKeys: [
+        "services.service3.feature1",
+        "services.service3.feature2",
+        "services.service3.feature3",
+        "services.service3.feature4"
       ]
     },
     {
       icon: Users,
-      title: "Formación y Cursos",
-      description: "Programas formativos completos sobre inversión inmobiliaria, desde nivel inicial hasta estrategias avanzadas de rentabilidad.",
-      features: [
-        "Cursos online y presenciales",
-        "Material didáctico exclusivo",
-        "Casos prácticos reales",
-        "Comunidad de inversores"
+      titleKey: "services.service4.title",
+      descriptionKey: "services.service4.description",
+      featuresKeys: [
+        "services.service4.feature1",
+        "services.service4.feature2",
+        "services.service4.feature3",
+        "services.service4.feature4"
       ]
     }
   ];
@@ -75,13 +75,13 @@ const Services = () => {
                 <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
                   <Icon className="h-8 w-8 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
+                <h3 className="text-2xl font-bold mb-4">{t(service.titleKey)}</h3>
+                <p className="text-muted-foreground mb-6">{t(service.descriptionKey)}</p>
                 <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
+                  {service.featuresKeys.map((featureKey, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <span className="text-accent mt-1">✓</span>
-                      <span className="text-sm">{feature}</span>
+                      <span className="text-sm">{t(featureKey)}</span>
                     </li>
                   ))}
                 </ul>

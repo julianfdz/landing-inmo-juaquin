@@ -84,7 +84,7 @@ Este volumen forma parte de la colección Tu Negocio Inmobiliario, una serie de 
             <p className="text-xl text-muted-foreground">{t('books.subtitle')}</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {books.map((book, index) => (
               <div
                 key={index}
@@ -92,21 +92,20 @@ Este volumen forma parte de la colección Tu Negocio Inmobiliario, una serie de 
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setSelectedBook(book)}
               >
-                <div className="aspect-[3/4] overflow-hidden max-h-64">
+                <div className="overflow-hidden">
                   <img 
                     src={book.image} 
                     alt={book.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-4 space-y-3">
-                  <h3 className="text-base font-bold leading-tight">{book.title}</h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed line-clamp-3">
+                <div className="p-5 space-y-3">
+                  <h3 className="text-lg font-bold leading-tight">{book.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {book.shortDescription}
                   </p>
                   <Button
                     variant="outline"
-                    size="sm"
                     className="w-full gap-2"
                     onClick={(e) => {
                       e.stopPropagation();
@@ -114,7 +113,7 @@ Este volumen forma parte de la colección Tu Negocio Inmobiliario, una serie de 
                     }}
                   >
                     {t('books.cta')}
-                    <ExternalLink className="h-3 w-3" />
+                    <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>

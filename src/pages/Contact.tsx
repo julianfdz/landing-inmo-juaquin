@@ -7,14 +7,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-4">{t('contact.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto animate-fade-in-delay-1">
           <div className="bg-card rounded-xl border border-border p-8 space-y-8">
             <div>
               <h2 className="text-2xl font-bold mb-4">{t('contact.formTitle')}</h2>

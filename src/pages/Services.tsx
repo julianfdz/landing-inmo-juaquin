@@ -57,7 +57,7 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-4">{t('services.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('services.subtitle')}
@@ -70,7 +70,8 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="bg-card rounded-xl border border-border p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="bg-card rounded-xl border border-border p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-in"
+                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
                 <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
                   <Icon className="h-8 w-8 text-accent" />
@@ -90,7 +91,7 @@ const Services = () => {
           })}
         </div>
 
-        <div className="text-center bg-muted/30 rounded-2xl p-12 max-w-4xl mx-auto">
+        <div className="text-center bg-muted/30 rounded-2xl p-12 max-w-4xl mx-auto animate-fade-in-delay-3">
           <h2 className="text-3xl font-bold mb-4">{t('services.ctaTitle')}</h2>
           <p className="text-muted-foreground mb-8">
             {t('services.ctaDesc')}

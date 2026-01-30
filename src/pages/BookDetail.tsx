@@ -80,7 +80,7 @@ const BookDetail = () => {
       <div className="container mx-auto px-6">
         <Button
           variant="ghost"
-          className="mb-8 gap-2"
+          className="mb-8 gap-2 animate-fade-in"
           onClick={() => navigate("/#books")}
         >
           <ArrowLeft className="h-4 w-4" />
@@ -89,7 +89,7 @@ const BookDetail = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Imagen del libro */}
-          <div className="sticky top-28">
+          <div className="sticky top-28 animate-fade-in-delay-1">
             <div className="bg-muted/30 rounded-2xl p-8 flex items-center justify-center">
               <img
                 src={book.image}
@@ -100,7 +100,7 @@ const BookDetail = () => {
           </div>
 
           {/* Información del libro */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in-delay-2">
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">
               {book.title}
             </h1>

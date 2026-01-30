@@ -55,7 +55,7 @@ const Resources = () => {
   return (
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-4">{t('resources.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('resources.subtitle')}
@@ -64,7 +64,7 @@ const Resources = () => {
 
         <div className="max-w-4xl mx-auto">
           {/* Recursos disponibles */}
-          <div className="mb-12">
+          <div className="mb-12 animate-fade-in-delay-1">
             <h2 className="text-2xl font-bold mb-6">Recursos Disponibles</h2>
             <div className="grid gap-6">
               {availableResources.map((resource, index) => (
@@ -103,7 +103,7 @@ const Resources = () => {
           </div>
 
           {/* Próximamente */}
-          <div>
+          <div className="animate-fade-in-delay-2">
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <Clock className="h-6 w-6 text-muted-foreground" />
               Próximamente

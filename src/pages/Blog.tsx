@@ -39,7 +39,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl font-bold mb-4">{t('blog.title')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('blog.subtitle')}
@@ -47,7 +47,7 @@ const Blog = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="flex gap-3 mb-12 flex-wrap justify-center">
+          <div className="flex gap-3 mb-12 flex-wrap justify-center animate-fade-in-delay-1">
             <button className="px-4 py-2 rounded-full bg-accent text-accent-foreground font-medium">
               {t('blog.all')}
             </button>
@@ -65,7 +65,8 @@ const Blog = () => {
             {posts.map((post, index) => (
               <article
                 key={index}
-                className="bg-card rounded-xl border border-border p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                className="bg-card rounded-xl border border-border p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1 cursor-pointer animate-fade-in"
+                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
                 <div className="flex items-center gap-4 mb-4 text-sm text-muted-foreground">
                   <span className="flex items-center gap-2">
@@ -89,7 +90,7 @@ const Blog = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 animate-fade-in-delay-3">
             <p className="text-muted-foreground">
               {t('blog.comingSoon')}
             </p>

@@ -1,49 +1,132 @@
 import { useTranslation } from "react-i18next";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import logoTni from "@/assets/logo-tni.png";
 
 const HomeHero = () => {
   const { t } = useTranslation();
+  const ref = useRef<HTMLElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   const scrollToBooks = () => {
     document.getElementById('books')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-background via-muted/30 to-background overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--accent)/0.1),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.05),transparent_50%)]" />
+    <section 
+      ref={ref}
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden"
+    >
+      {/* Animated gradient background with parallax */}
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-br from-background via-muted/30 to-background"
+        style={{ y: backgroundY }}
+      />
+      
+      {/* Subtle texture overlay */}
+      <div 
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+        }}
+      />
+      
+      {/* Radial gradient accents with parallax */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{ y: backgroundY }}
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--accent)/0.12),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary)/0.06),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_80%,hsl(var(--accent)/0.08),transparent_40%)]" />
+      </motion.div>
       
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            {t('hero.title')}
-            <span className="block text-accent mt-2">{t('hero.titleBold')}</span>
-          </h1>
-          
-          <p className="text-xl text-muted-foreground max-w-xl">
-            {t('hero.subtitle')}
-          </p>
-          
-          <Button 
-            size="lg"
-            onClick={scrollToBooks}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2 text-lg px-8 py-6"
+        <motion.div 
+          className="space-y-8"
+          style={{ y: textY, opacity }}
+        >
+          <motion.h1 
+            className="text-5xl md:text-7xl font-bold leading-tight"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {t('hero.cta')}
-            <ArrowRight className="h-5 w-5" />
-          </Button>
-        </div>
+            {t('hero.title')}
+            <motion.span 
+              className="block text-accent mt-2"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
+              {t('hero.titleBold')}
+            </motion.span>
+          </motion.h1>
+          
+          <motion.p 
+            className="text-xl text-muted-foreground max-w-xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            {t('hero.subtitle')}
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <Button 
+              size="lg"
+              onClick={scrollToBooks}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2 text-lg px-8 py-6 
+                shadow-[0_8px_30px_-8px_hsl(var(--accent)/0.4)]
+                hover:shadow-[0_12px_40px_-8px_hsl(var(--accent)/0.5)]
+                transition-all duration-300"
+            >
+              {t('hero.cta')}
+              <ArrowRight className="h-5 w-5" />
+            </Button>
+          </motion.div>
+        </motion.div>
 
-        <div className="relative animate-slide-in flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl rounded-full" />
-          <img 
+        <motion.div 
+          className="relative flex items-center justify-center"
+          style={{ y: logoY, opacity }}
+        >
+          <motion.div 
+            className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl rounded-full"
+            animate={{ 
+              scale: [1, 1.05, 1],
+              opacity: [0.5, 0.7, 0.5]
+            }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.img 
             src={logoTni} 
             alt="Tu Negocio Inmobiliario" 
             className="relative z-10 w-full max-w-md md:max-w-lg object-contain drop-shadow-xl"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

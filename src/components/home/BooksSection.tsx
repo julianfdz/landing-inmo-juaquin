@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import BookCard3D from "./BookCard3D";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Info } from "lucide-react";
 import libro1 from "@/assets/libro1-real.jpg";
 import libro2 from "@/assets/libro2-real.jpg";
 
@@ -14,6 +15,7 @@ interface Book {
 
 const BooksSection = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const books: Book[] = [
     {
@@ -33,34 +35,54 @@ const BooksSection = () => {
   ];
 
   return (
-    <section id="books" className="py-24 bg-muted/30 relative overflow-hidden">
-      {/* Subtle texture background */}
-      <div 
-        className="absolute inset-0 opacity-[0.015]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+    <section id="books" className="py-24 bg-muted/30">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('books.title')}</h2>
           <p className="text-xl text-muted-foreground">{t('books.subtitle')}</p>
-        </motion.div>
+        </div>
 
         <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {books.map((book, index) => (
-            <BookCard3D
-              key={book.id}
-              {...book}
-              index={index}
-            />
+            <div
+              key={index}
+              className="bg-card rounded-lg border border-border overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] animate-fade-in group"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="aspect-[4/4] overflow-hidden bg-muted/50 relative">
+                <img 
+                  src={book.image} 
+                  alt={book.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-background/20 to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-300" />
+              </div>
+              <div className="p-4 space-y-3">
+                <h3 className="text-sm font-bold leading-tight line-clamp-2">{book.title}</h3>
+                <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
+                  {book.shortDescription}
+                </p>
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="flex-1 gap-1.5 text-xs"
+                    onClick={() => navigate(`/libro/${book.id}`)}
+                  >
+                    <Info className="h-3 w-3" />
+                    {t('books.moreInfo')}
+                  </Button>
+                  <Button
+                    size="sm"
+                    className="flex-1 gap-1.5 text-xs"
+                    onClick={() => window.open(book.amazonUrl, '_blank')}
+                  >
+                    Amazon
+                    <ExternalLink className="h-3 w-3" />
+                  </Button>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

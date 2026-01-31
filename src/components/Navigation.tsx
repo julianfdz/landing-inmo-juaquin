@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Globe, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,17 @@ import {
 const Navigation = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToTop = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
+    }
+  };
 
   const navItems = [
     { path: "/", label: t('nav.home') },
@@ -31,24 +41,38 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="text-2xl font-bold text-foreground">
+          <button onClick={scrollToTop} className="text-2xl font-bold text-foreground text-left">
             TuNegocioInmobiliario<span className="text-sm font-normal text-muted-foreground">.com</span>
-          </Link>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  location.pathname === item.path
-                    ? "text-accent"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {item.label}
-              </Link>
+              item.path === "/" ? (
+                <button
+                  key={item.path}
+                  onClick={scrollToTop}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    location.pathname === item.path
+                      ? "text-accent"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    location.pathname === item.path
+                      ? "text-accent"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             
             <DropdownMenu>
@@ -85,18 +109,35 @@ const Navigation = () => {
         {mobileMenuOpen && (
           <div className="md:hidden pb-4 space-y-4">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block text-sm font-medium transition-colors ${
-                  location.pathname === item.path
-                    ? "text-accent"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {item.label}
-              </Link>
+              item.path === "/" ? (
+                <button
+                  key={item.path}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    scrollToTop();
+                  }}
+                  className={`block text-sm font-medium transition-colors text-left ${
+                    location.pathname === item.path
+                      ? "text-accent"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block text-sm font-medium transition-colors ${
+                    location.pathname === item.path
+                      ? "text-accent"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             <div className="flex gap-2 pt-2">
               <Button

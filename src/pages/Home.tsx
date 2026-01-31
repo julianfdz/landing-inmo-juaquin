@@ -4,7 +4,7 @@ import ResourcesCTA from "@/components/home/ResourcesCTA";
 import QuoteSection from "@/components/home/QuoteSection";
 import FinalCTA from "@/components/home/FinalCTA";
 import AnimatedBackground from "@/components/decorative/AnimatedBackground";
-import { WaveDivider, WaveDividerLayered, CurvedDivider, TiltedDivider } from "@/components/decorative/SectionDividers";
+import { AnimatedWave, AnimatedWaveLayered, AnimatedWaveSmooth, AnimatedCurve } from "@/components/decorative/SectionDividers";
 
 const Home = () => {
   return (
@@ -17,24 +17,27 @@ const Home = () => {
         <HomeHero />
         
         {/* Divider: Hero → Books */}
-        <WaveDividerLayered className="-mt-1 bg-transparent" />
+        <AnimatedWaveLayered className="-mt-1 bg-transparent" />
         
         <BooksSection />
         
         {/* Divider: Books → Resources */}
-        <WaveDivider flip className="-mb-1" color="hsl(var(--background))" />
+        <AnimatedWave flip className="-mb-1" />
         
         <ResourcesCTA />
         
         {/* Divider: Resources → Quote */}
-        <TiltedDivider className="-mb-1" />
+        <AnimatedWaveSmooth className="-mb-1" />
         
         <QuoteSection />
         
         {/* Divider: Quote → Final CTA */}
-        <CurvedDivider flip className="-mt-1" color="hsl(var(--background))" />
+        <AnimatedCurve flip className="-mt-1" />
         
         <FinalCTA />
+        
+        {/* Final wave at bottom */}
+        <AnimatedWave className="-mt-1" />
       </div>
     </div>
   );

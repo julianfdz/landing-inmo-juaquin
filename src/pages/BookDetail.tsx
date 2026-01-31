@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
@@ -53,6 +54,10 @@ const BookDetail = () => {
   const { t } = useTranslation();
   const { bookId } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [bookId]);
 
   const book = books.find(b => b.id === bookId);
 

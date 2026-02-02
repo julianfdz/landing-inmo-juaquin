@@ -54,39 +54,57 @@ const HomeHero = () => {
       
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
         <motion.div 
-          className="space-y-8"
+          className="space-y-6"
           style={{ y: textY, opacity }}
         >
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold leading-tight"
+            className="text-4xl md:text-6xl font-bold leading-tight"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {t('hero.title')}
+            INVIERTE EN INMUEBLES
             <motion.span 
               className="block text-accent mt-2"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              {t('hero.titleBold')}
+              COMO UN PROFESIONAL
             </motion.span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl text-muted-foreground max-w-xl"
+            className="text-lg text-muted-foreground max-w-xl leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            {t('hero.subtitle')}
+            Descubre la colección de guías prácticas de <strong className="text-foreground">Tu Negocio Inmobiliario</strong>, donde aprenderás de forma profesional y estructurada los aspectos esenciales de los cuatro procesos clave del sector: <span className="text-accent font-medium">comprar, vender, alquilar y solicitar hipotecas</span>.
+          </motion.p>
+
+          <motion.p 
+            className="text-base text-muted-foreground max-w-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            Accede también a recursos descargables exclusivos para gestionar todas tus viviendas, realizar predicciones de ingresos y simular operaciones inmobiliarias con precisión. Y para llevar tu negocio inmobiliario al siguiente nivel, podrás contar con servicios especializados prestados por profesionales.
+          </motion.p>
+
+          <motion.p 
+            className="text-base text-muted-foreground max-w-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            Con todo ello, avanzarás de forma sólida, estratégica y con una <strong className="text-foreground">curva de aprendizaje exponencial</strong> que te convertirá en un verdadero profesional inmobiliario.
           </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
           >
             <Button 
               size="lg"
@@ -99,6 +117,18 @@ const HomeHero = () => {
               {t('hero.cta')}
               <ArrowRight className="h-5 w-5" />
             </Button>
+          </motion.div>
+
+          {/* Texto adicional inferior */}
+          <motion.div
+            className="pt-6 border-t border-border/50"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            <p className="text-sm text-muted-foreground italic leading-relaxed">
+              Con los recursos descargables y los volúmenes de Tu Negocio Inmobiliario, accede a una <strong className="text-foreground not-italic">autoformación completa de 0 a 100</strong> para aprender a gestionar las diferentes partes del proceso inmobiliario con mentalidad profesional.
+            </p>
           </motion.div>
         </motion.div>
 

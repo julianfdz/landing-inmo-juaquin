@@ -13,10 +13,18 @@ const resources = {
         contact: 'Contacto'
       },
       hero: {
-        title: 'Invierte en inmuebles',
-        titleBold: 'con confianza',
-        subtitle: 'Descubre mi colección de libros sobre inversión inmobiliaria y accede a recursos prácticos, plantillas y asesoría personalizada para dar el siguiente paso.',
+        title1: 'INVIERTE EN INMUEBLES',
+        title2: 'COMO UN PROFESIONAL',
+        description: 'Descubre la colección de guías prácticas de <strong>Tu Negocio Inmobiliario</strong>, donde aprenderás de forma profesional y estructurada los aspectos esenciales de los cuatro procesos clave del sector: <span class="text-accent font-medium">comprar, vender, alquilar y solicitar hipotecas</span>.',
         cta: 'Explora mis libros'
+      },
+      intro: {
+        resourcesTitle: 'Recursos exclusivos',
+        resourcesDesc: 'Accede a recursos descargables exclusivos para gestionar todas tus viviendas, realizar predicciones de ingresos y simular operaciones inmobiliarias con precisión.',
+        servicesTitle: 'Servicios profesionales',
+        servicesDesc: 'Para llevar tu negocio inmobiliario al siguiente nivel, podrás contar con servicios especializados prestados por profesionales certificados.',
+        learningTitle: 'Curva de aprendizaje exponencial',
+        learningDesc: 'Con todo ello, avanzarás de forma sólida, estratégica y con una <strong>curva de aprendizaje exponencial</strong> que te convertirá en un verdadero profesional inmobiliario.'
       },
       books: {
         title: 'Mis Libros',
@@ -138,10 +146,18 @@ const resources = {
         contact: 'Contact'
       },
       hero: {
-        title: 'Invest in real estate',
-        titleBold: 'with confidence',
-        subtitle: 'Discover my collection of books on real estate investment and access practical resources, templates and personalized advice to take the next step.',
+        title1: 'INVEST IN REAL ESTATE',
+        title2: 'LIKE A PROFESSIONAL',
+        description: 'Discover the collection of practical guides from <strong>Tu Negocio Inmobiliario</strong>, where you will learn professionally and in a structured way the essential aspects of the four key processes in the sector: <span class="text-accent font-medium">buying, selling, renting and applying for mortgages</span>.',
         cta: 'Explore my books'
+      },
+      intro: {
+        resourcesTitle: 'Exclusive resources',
+        resourcesDesc: 'Access exclusive downloadable resources to manage all your properties, make income predictions and simulate real estate operations with precision.',
+        servicesTitle: 'Professional services',
+        servicesDesc: 'To take your real estate business to the next level, you can count on specialized services provided by certified professionals.',
+        learningTitle: 'Exponential learning curve',
+        learningDesc: 'With all this, you will advance in a solid, strategic way and with an <strong>exponential learning curve</strong> that will turn you into a true real estate professional.'
       },
       books: {
         title: 'My Books',
@@ -263,10 +279,18 @@ const resources = {
         contact: 'Kontakt'
       },
       hero: {
-        title: 'Investieren Sie in Immobilien',
-        titleBold: 'mit Vertrauen',
-        subtitle: 'Entdecken Sie meine Buchsammlung über Immobilieninvestitionen und greifen Sie auf praktische Ressourcen, Vorlagen und persönliche Beratung zu, um den nächsten Schritt zu machen.',
+        title1: 'INVESTIEREN SIE IN IMMOBILIEN',
+        title2: 'WIE EIN PROFI',
+        description: 'Entdecken Sie die Sammlung praktischer Leitfäden von <strong>Tu Negocio Inmobiliario</strong>, wo Sie professionell und strukturiert die wesentlichen Aspekte der vier Schlüsselprozesse der Branche lernen: <span class="text-accent font-medium">kaufen, verkaufen, vermieten und Hypotheken beantragen</span>.',
         cta: 'Meine Bücher entdecken'
+      },
+      intro: {
+        resourcesTitle: 'Exklusive Ressourcen',
+        resourcesDesc: 'Zugang zu exklusiven herunterladbaren Ressourcen zur Verwaltung aller Ihrer Immobilien, Einkommensprognosen und präzisen Simulation von Immobilienoperationen.',
+        servicesTitle: 'Professionelle Dienstleistungen',
+        servicesDesc: 'Um Ihr Immobiliengeschäft auf die nächste Stufe zu heben, können Sie auf spezialisierte Dienstleistungen von zertifizierten Fachleuten zählen.',
+        learningTitle: 'Exponentielle Lernkurve',
+        learningDesc: 'Mit all dem werden Sie solide und strategisch vorankommen, mit einer <strong>exponentiellen Lernkurve</strong>, die Sie zu einem echten Immobilienprofi macht.'
       },
       books: {
         title: 'Meine Bücher',

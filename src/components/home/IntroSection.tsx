@@ -1,7 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { BookOpen, Download, Briefcase, GraduationCap } from "lucide-react";
 
 const IntroSection = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    { icon: BookOpen, labelKey: "intro.volumes", sublabelKey: "intro.volumesDesc" },
+    { icon: Download, labelKey: "intro.resources", sublabelKey: "intro.resourcesDesc" },
+    { icon: Briefcase, labelKey: "intro.services", sublabelKey: "intro.servicesDesc" },
+    { icon: GraduationCap, labelKey: "intro.training", sublabelKey: "intro.trainingDesc" }
+  ];
+
   return (
     <section className="py-16 bg-gradient-to-b from-background to-muted/20 relative overflow-hidden">
       {/* Subtle background accent */}
@@ -23,11 +33,10 @@ const IntroSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Con los recursos descargables y los volúmenes de <strong className="text-foreground">Tu Negocio Inmobiliario</strong>, accede a una{" "}
-              <span className="text-accent font-semibold">autoformación completa de 0 a 100</span>{" "}
-              para aprender a gestionar las diferentes partes del proceso inmobiliario con mentalidad profesional.
-            </p>
+            <p 
+              className="text-lg md:text-xl text-muted-foreground leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: t('intro.mainText') }}
+            />
           </motion.div>
 
           {/* Feature highlights */}
@@ -38,12 +47,7 @@ const IntroSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {[
-              { icon: BookOpen, label: "4 Volúmenes", sublabel: "Guías completas" },
-              { icon: Download, label: "Recursos", sublabel: "Descargables" },
-              { icon: Briefcase, label: "Servicios", sublabel: "Profesionales" },
-              { icon: GraduationCap, label: "Formación", sublabel: "De 0 a 100" }
-            ].map((item, index) => (
+            {features.map((item, index) => (
               <motion.div
                 key={index}
                 className="flex flex-col items-center gap-2 p-4 rounded-xl bg-muted/30 hover:bg-muted/50 transition-colors"
@@ -55,8 +59,8 @@ const IntroSection = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
                   <item.icon className="h-6 w-6 text-accent" />
                 </div>
-                <span className="font-semibold text-sm">{item.label}</span>
-                <span className="text-xs text-muted-foreground">{item.sublabel}</span>
+                <span className="font-semibold text-sm">{t(item.labelKey)}</span>
+                <span className="text-xs text-muted-foreground">{t(item.sublabelKey)}</span>
               </motion.div>
             ))}
           </motion.div>

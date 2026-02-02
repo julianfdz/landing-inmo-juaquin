@@ -19,12 +19,15 @@ const resources = {
         cta: 'Explora mis libros'
       },
       intro: {
-        resourcesTitle: 'Recursos exclusivos',
-        resourcesDesc: 'Accede a recursos descargables exclusivos para gestionar todas tus viviendas, realizar predicciones de ingresos y simular operaciones inmobiliarias con precisión.',
-        servicesTitle: 'Servicios profesionales',
-        servicesDesc: 'Para llevar tu negocio inmobiliario al siguiente nivel, podrás contar con servicios especializados prestados por profesionales certificados.',
-        learningTitle: 'Curva de aprendizaje exponencial',
-        learningDesc: 'Con todo ello, avanzarás de forma sólida, estratégica y con una <strong>curva de aprendizaje exponencial</strong> que te convertirá en un verdadero profesional inmobiliario.'
+        mainText: 'Con los recursos descargables y los volúmenes de <strong>Tu Negocio Inmobiliario</strong>, accede a una <span class="text-accent font-semibold">autoformación completa de 0 a 100</span> para aprender a gestionar las diferentes partes del proceso inmobiliario con mentalidad profesional.',
+        volumes: '4 Volúmenes',
+        volumesDesc: 'Guías completas',
+        resources: 'Recursos',
+        resourcesDesc: 'Descargables',
+        services: 'Servicios',
+        servicesDesc: 'Profesionales',
+        training: 'Formación',
+        trainingDesc: 'De 0 a 100'
       },
       books: {
         title: 'Mis Libros',
@@ -209,12 +212,15 @@ const resources = {
         cta: 'Explore my books'
       },
       intro: {
-        resourcesTitle: 'Exclusive resources',
-        resourcesDesc: 'Access exclusive downloadable resources to manage all your properties, make income predictions and simulate real estate operations with precision.',
-        servicesTitle: 'Professional services',
-        servicesDesc: 'To take your real estate business to the next level, you can count on specialized services provided by certified professionals.',
-        learningTitle: 'Exponential learning curve',
-        learningDesc: 'With all this, you will advance in a solid, strategic way and with an <strong>exponential learning curve</strong> that will turn you into a true real estate professional.'
+        mainText: 'With downloadable resources and the volumes of <strong>Tu Negocio Inmobiliario</strong>, access a <span class="text-accent font-semibold">complete self-training from 0 to 100</span> to learn how to manage the different parts of the real estate process with a professional mindset.',
+        volumes: '4 Volumes',
+        volumesDesc: 'Complete guides',
+        resources: 'Resources',
+        resourcesDesc: 'Downloadable',
+        services: 'Services',
+        servicesDesc: 'Professional',
+        training: 'Training',
+        trainingDesc: 'From 0 to 100'
       },
       books: {
         title: 'My Books',
@@ -399,12 +405,15 @@ const resources = {
         cta: 'Meine Bücher entdecken'
       },
       intro: {
-        resourcesTitle: 'Exklusive Ressourcen',
-        resourcesDesc: 'Zugang zu exklusiven herunterladbaren Ressourcen zur Verwaltung aller Ihrer Immobilien, Einkommensprognosen und präzisen Simulation von Immobilienoperationen.',
-        servicesTitle: 'Professionelle Dienstleistungen',
-        servicesDesc: 'Um Ihr Immobiliengeschäft auf die nächste Stufe zu heben, können Sie auf spezialisierte Dienstleistungen von zertifizierten Fachleuten zählen.',
-        learningTitle: 'Exponentielle Lernkurve',
-        learningDesc: 'Mit all dem werden Sie solide und strategisch vorankommen, mit einer <strong>exponentiellen Lernkurve</strong>, die Sie zu einem echten Immobilienprofi macht.'
+        mainText: 'Mit herunterladbaren Ressourcen und den Bänden von <strong>Tu Negocio Inmobiliario</strong> erhalten Sie Zugang zu einer <span class="text-accent font-semibold">kompletten Selbstausbildung von 0 bis 100</span>, um zu lernen, wie Sie die verschiedenen Teile des Immobilienprozesses mit professioneller Denkweise verwalten.',
+        volumes: '4 Bände',
+        volumesDesc: 'Vollständige Leitfäden',
+        resources: 'Ressourcen',
+        resourcesDesc: 'Herunterladbar',
+        services: 'Dienstleistungen',
+        servicesDesc: 'Professionell',
+        training: 'Ausbildung',
+        trainingDesc: 'Von 0 bis 100'
       },
       books: {
         title: 'Meine Bücher',

@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { BookOpen, FileText, TrendingUp, Home, Wallet, Key } from "lucide-react";
+import { FileText, TrendingUp, Home, Wallet, Key } from "lucide-react";
 
 const Blog = () => {
+  const { t } = useTranslation();
+
   const topics = [
-    { icon: Home, label: "Comprar" },
-    { icon: TrendingUp, label: "Vender" },
-    { icon: Key, label: "Alquilar" },
-    { icon: Wallet, label: "Hipoteca" },
+    { icon: Home, label: t('blog.topicBuy') },
+    { icon: TrendingUp, label: t('blog.topicSell') },
+    { icon: Key, label: t('blog.topicRent') },
+    { icon: Wallet, label: t('blog.topicMortgage') },
   ];
 
   return (
@@ -14,7 +17,7 @@ const Blog = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl font-bold mb-6">Blog</h1>
+          <h1 className="text-5xl font-bold mb-6">{t('blog.title')}</h1>
           
           <motion.div
             className="max-w-3xl mx-auto bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 md:p-10"
@@ -23,9 +26,7 @@ const Blog = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              En este espacio encontrarás artículos prácticos sobre inversión, gestión y estrategia inmobiliaria. 
-              Contenido claro, directo y orientado a que cualquier persona quiera entender cómo funcionan los 
-              procesos clave del sector.
+              {t('blog.description')}
             </p>
             
             {/* Topics icons */}
@@ -44,11 +45,10 @@ const Blog = () => {
               ))}
             </div>
 
-            <p className="text-muted-foreground leading-relaxed">
-              Publicamos guías, análisis, novedades relevantes y contenido de apoyo que complementa los 
-              recursos y volúmenes de <strong className="text-foreground">Tu Negocio Inmobiliario</strong>. 
-              Todo explicado con un enfoque sencillo, estructurado y aplicable.
-            </p>
+            <p 
+              className="text-muted-foreground leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: t('blog.description2') }}
+            />
           </motion.div>
         </div>
 
@@ -63,9 +63,9 @@ const Blog = () => {
             <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
               <FileText className="h-8 w-8 text-accent" />
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Próximamente</h2>
+            <h2 className="text-2xl font-semibold mb-3">{t('blog.comingSoonTitle')}</h2>
             <p className="text-muted-foreground">
-              Estamos preparando contenido de calidad. Pronto publicaremos los primeros artículos.
+              {t('blog.comingSoonDesc')}
             </p>
           </div>
         </motion.div>
@@ -78,8 +78,7 @@ const Blog = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-xs text-muted-foreground/70 italic">
-            El contenido del blog tiene carácter informativo y divulgativo. 
-            No constituye asesoramiento jurídico, fiscal o financiero.
+            {t('blog.disclaimer')}
           </p>
         </motion.div>
       </div>

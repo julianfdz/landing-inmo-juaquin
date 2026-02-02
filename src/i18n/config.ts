@@ -115,10 +115,15 @@ const resources = {
       },
       blog: {
         title: 'Blog',
-        subtitle: 'Artículos, consejos y experiencias sobre inversión inmobiliaria',
-        all: 'Todos',
-        readMore: 'Leer más',
-        comingSoon: 'Próximamente más artículos...'
+        description: 'En este espacio encontrarás artículos prácticos sobre inversión, gestión y estrategia inmobiliaria. Contenido claro, directo y orientado a que cualquier persona quiera entender cómo funcionan los procesos clave del sector.',
+        description2: 'Publicamos guías, análisis, novedades relevantes y contenido de apoyo que complementa los recursos y volúmenes de <strong>Tu Negocio Inmobiliario</strong>. Todo explicado con un enfoque sencillo, estructurado y aplicable.',
+        topicBuy: 'Comprar',
+        topicSell: 'Vender',
+        topicRent: 'Alquilar',
+        topicMortgage: 'Hipoteca',
+        comingSoonTitle: 'Próximamente',
+        comingSoonDesc: 'Estamos preparando contenido de calidad. Pronto publicaremos los primeros artículos.',
+        disclaimer: 'El contenido del blog tiene carácter informativo y divulgativo. No constituye asesoramiento jurídico, fiscal o financiero.'
       },
       contact: {
         title: 'Contacto',
@@ -248,10 +253,15 @@ const resources = {
       },
       blog: {
         title: 'Blog',
-        subtitle: 'Articles, tips and experiences about real estate investment',
-        all: 'All',
-        readMore: 'Read more',
-        comingSoon: 'More articles coming soon...'
+        description: 'In this space you will find practical articles about investment, management and real estate strategy. Clear, direct content aimed at anyone who wants to understand how the key processes of the sector work.',
+        description2: 'We publish guides, analysis, relevant news and supporting content that complements the resources and volumes of <strong>Tu Negocio Inmobiliario</strong>. Everything explained with a simple, structured and applicable approach.',
+        topicBuy: 'Buy',
+        topicSell: 'Sell',
+        topicRent: 'Rent',
+        topicMortgage: 'Mortgage',
+        comingSoonTitle: 'Coming Soon',
+        comingSoonDesc: 'We are preparing quality content. We will soon publish the first articles.',
+        disclaimer: 'The blog content is informative and educational. It does not constitute legal, tax or financial advice.'
       },
       contact: {
         title: 'Contact',
@@ -381,10 +391,15 @@ const resources = {
       },
       blog: {
         title: 'Blog',
-        subtitle: 'Artikel, Tipps und Erfahrungen über Immobilieninvestitionen',
-        all: 'Alle',
-        readMore: 'Weiterlesen',
-        comingSoon: 'Weitere Artikel folgen...'
+        description: 'In diesem Bereich finden Sie praktische Artikel über Investition, Verwaltung und Immobilienstrategie. Klarer, direkter Inhalt für alle, die verstehen wollen, wie die wichtigsten Prozesse der Branche funktionieren.',
+        description2: 'Wir veröffentlichen Leitfäden, Analysen, relevante Neuigkeiten und unterstützende Inhalte, die die Ressourcen und Bände von <strong>Tu Negocio Inmobiliario</strong> ergänzen. Alles erklärt mit einem einfachen, strukturierten und anwendbaren Ansatz.',
+        topicBuy: 'Kaufen',
+        topicSell: 'Verkaufen',
+        topicRent: 'Mieten',
+        topicMortgage: 'Hypothek',
+        comingSoonTitle: 'Demnächst',
+        comingSoonDesc: 'Wir bereiten qualitativ hochwertige Inhalte vor. Wir werden bald die ersten Artikel veröffentlichen.',
+        disclaimer: 'Der Bloginhalt ist informativ und lehrreich. Er stellt keine rechtliche, steuerliche oder finanzielle Beratung dar.'
       },
       contact: {
         title: 'Kontakt',

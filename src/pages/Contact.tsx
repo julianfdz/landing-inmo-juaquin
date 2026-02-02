@@ -17,9 +17,12 @@ const Contact = () => {
         <div className="max-w-2xl mx-auto animate-fade-in-delay-1">
           <div className="bg-card rounded-xl border border-border p-8 space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-4">{t('contact.formTitle')}</h2>
-              <p className="text-muted-foreground">
-                {t('contact.formDesc')}
+              <h2 className="text-2xl font-bold mb-4">Estamos aquí para ayudarte</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                El equipo de <strong className="text-foreground">Tu Negocio Inmobiliario</strong> está 
+                a tu disposición para resolver cualquier duda. Ya sea sobre nuestros servicios, los recursos 
+                formativos o cualquier aspecto relacionado con tu camino en la inversión inmobiliaria, 
+                estaremos encantados de atenderte.
               </p>
             </div>
 

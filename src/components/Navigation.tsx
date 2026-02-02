@@ -30,6 +30,7 @@ const Navigation = () => {
     { path: "/sobre-mi", label: t('nav.about') },
     { path: "/servicios", label: t('nav.services') },
     { path: "/recursos", label: t('nav.resources') },
+    { path: "/blog", label: t('nav.blog') },
     { path: "/contacto", label: t('nav.contact') },
   ];
 

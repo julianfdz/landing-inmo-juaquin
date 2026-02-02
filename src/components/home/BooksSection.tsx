@@ -7,45 +7,36 @@ import libro2 from "@/assets/libro2-real.jpg";
 import libro3 from "@/assets/libro3-proximamente.png";
 import libro4 from "@/assets/libro4-proximamente.png";
 
-interface Book {
-  id: string;
-  title: string;
-  shortDescription: string;
-  amazonUrl?: string;
-  image: string;
-  comingSoon?: boolean;
-}
-
 const BooksSection = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const books: Book[] = [
+  const books = [
     {
       id: "vol-1-comprar-viviendas",
-      title: "Tu Negocio Inmobiliario. Vol. 1: Guía práctica para comprar viviendas en España",
-      shortDescription: "Aprende a comprar una vivienda entendiendo cada paso del proceso, evitando errores habituales y tomando decisiones con criterio propio.",
+      titleKey: "books.book1Title",
+      descKey: "books.book1Desc",
       amazonUrl: "https://amzn.eu/d/8hUnTAN",
       image: libro1
     },
     {
       id: "vol-2-solicitar-hipotecas",
-      title: "Tu Negocio Inmobiliario. Vol. 2: Guía práctica para solicitar hipotecas en España",
-      shortDescription: "Solicita y negocia tu hipoteca entendiendo qué te ofrece realmente el banco, comparando ofertas con criterios objetivos y evitando cláusulas abusivas.",
+      titleKey: "books.book2Title",
+      descKey: "books.book2Desc",
       amazonUrl: "https://amzn.eu/d/6vOb3zr",
       image: libro2
     },
     {
       id: "vol-3-alquilar-viviendas",
-      title: "Tu Negocio Inmobiliario. Vol. 3: Guía práctica para alquilar viviendas en España",
-      shortDescription: "Aprende todo lo necesario para alquilar viviendas en España con criterio y seguridad.",
+      titleKey: "books.book3Title",
+      descKey: "books.book3Desc",
       image: libro3,
       comingSoon: true
     },
     {
       id: "vol-4-vender-viviendas",
-      title: "Tu Negocio Inmobiliario. Vol. 4: Guía práctica para vender viviendas en España",
-      shortDescription: "Domina el proceso de venta de viviendas con estrategias efectivas y conocimiento del mercado.",
+      titleKey: "books.book4Title",
+      descKey: "books.book4Desc",
       image: libro4,
       comingSoon: true
     }
@@ -73,7 +64,7 @@ const BooksSection = () => {
               <div className="aspect-[4/5] overflow-hidden bg-muted/50 relative">
                 <img 
                   src={book.image} 
-                  alt={book.title}
+                  alt={t(book.titleKey)}
                   className={`w-full h-full object-cover transition-transform duration-500 ${
                     book.comingSoon ? 'grayscale-[30%]' : 'group-hover:scale-105'
                   }`}
@@ -82,7 +73,7 @@ const BooksSection = () => {
                   <div className="absolute inset-0 bg-background/60 flex items-center justify-center">
                     <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full flex items-center gap-2 font-semibold text-sm shadow-lg">
                       <Clock className="h-4 w-4" />
-                      Próximamente
+                      {t('books.comingSoon')}
                     </div>
                   </div>
                 )}
@@ -91,14 +82,14 @@ const BooksSection = () => {
                 )}
               </div>
               <div className="p-4 space-y-3">
-                <h3 className="text-sm font-bold leading-tight line-clamp-2">{book.title}</h3>
+                <h3 className="text-sm font-bold leading-tight line-clamp-2">{t(book.titleKey)}</h3>
                 <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
-                  {book.shortDescription}
+                  {t(book.descKey)}
                 </p>
                 {book.comingSoon ? (
                   <div className="flex items-center justify-center py-2 text-muted-foreground text-xs">
                     <Clock className="h-3 w-3 mr-1.5" />
-                    Disponible próximamente
+                    {t('books.availableSoon')}
                   </div>
                 ) : (
                   <div className="flex gap-2">

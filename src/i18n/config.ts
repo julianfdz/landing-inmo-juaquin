@@ -36,15 +36,15 @@ const resources = {
       },
       about: {
         title: 'Sobre mí',
-        subtitle: 'Construyendo patrimonio inmobiliario desde cero',
-        intro1: 'Soy <strong>Joaquín</strong>, especialista en inversiones inmobiliarias con más de 10 años de experiencia en el sector. Mi trayectoria comenzó con una pregunta simple: ¿cómo puedo generar ingresos pasivos sin necesitar grandes capitales iniciales?',
-        intro2: 'A lo largo de mi carrera, he ayudado a cientos de personas a dar sus primeros pasos en el mundo de la inversión inmobiliaria, logrando <strong>alta rentabilidad incluso con presupuestos bajos</strong>. Mi enfoque se centra en estrategias prácticas y replicables como Airbnb, pisos turísticos, compra-reforma-venta (house flipping) y gestión eficiente de propiedades.',
-        intro3: 'He publicado varios <strong>libros prácticos</strong> donde explico paso a paso cómo invertir de forma segura y rentable, compartiendo mi experiencia real en el mercado. Mi misión es democratizar el acceso a la inversión inmobiliaria, mostrando que con la formación adecuada y las estrategias correctas, cualquiera puede construir un patrimonio sólido.',
-        experienceTitle: 'Mi experiencia incluye:',
-        exp1: '+50 propiedades gestionadas en modalidad Airbnb y alquiler turístico',
-        exp2: '+20 proyectos de house flipping completados con éxito',
-        exp3: 'Formación a más de 300 inversores principiantes',
-        exp4: 'Autor de múltiples guías sobre inversión inmobiliaria'
+        name: 'Joaquín Ignacio',
+        bio1: 'Autor de la colección Tu Negocio Inmobiliario y desarrollador de una metodología propia orientada a estructurar y optimizar cada fase del proceso inmobiliario.',
+        bio2: 'Su trayectoria abarca la <strong>gestión integral de operaciones de inversión</strong> en distintos segmentos del mercado español, incluyendo vivienda urbana, propiedad turística y terrenos rústicos destinados a explotación agrícola.',
+        bio3: 'A lo largo de su trayectoria ha participado en numerosos procesos de <strong>compra y venta, análisis de operaciones, evaluación de riesgos y viabilidad, negociación hipotecaria y estructuración financiera</strong> de proyectos inmobiliarios, aplicando un enfoque que integra criterios económicos, documentales y procedimentales para garantizar decisiones sólidas y replicables dentro de cualquier estrategia de inversión.',
+        bio4: 'Asimismo, posee amplia experiencia en la <strong>puesta en marcha y administración de arrendamientos tradicionales y turísticos</strong>, así como en la organización documental y operativa necesaria para mantener, de forma profesionalizada, un patrimonio inmobiliario.',
+        bio5: 'Su trabajo se centra en transformar esta experiencia práctica en <strong>contenidos formativos, guías técnicas y recursos aplicados</strong> que permiten al inversor comprender, evaluar y ejecutar sus decisiones con criterio y seguridad.',
+        bio6: 'Como <strong>fundador intelectual del proyecto Tu Negocio Inmobiliario</strong>, Joaquín Ignacio aporta el marco conceptual, la metodología y las directrices estratégicas que sustentan la plataforma, ofreciendo un modelo estructurado y orientado a la mejora continua del inversor.',
+        servicesTitle: 'Quién presta los servicios',
+        servicesDesc: 'Los servicios profesionales disponibles en esta web son prestados exclusivamente por <strong>profesionales colaboradores certificados</strong> en sus respectivas áreas (fiscalidad, contabilidad, arquitectura, etc.). Todo ello se realiza siguiendo la metodología formativa desarrollada por Joaquín Ignacio para el proyecto Tu Negocio Inmobiliario y en base a la normativa actual.'
       },
       services: {
         title: 'Servicios',
@@ -161,15 +161,15 @@ const resources = {
       },
       about: {
         title: 'About me',
-        subtitle: 'Building real estate wealth from scratch',
-        intro1: 'I am <strong>Joaquín</strong>, a real estate investment specialist with over 10 years of experience in the sector. My journey began with a simple question: how can I generate passive income without needing large initial capitals?',
-        intro2: 'Throughout my career, I have helped hundreds of people take their first steps in the world of real estate investment, achieving <strong>high profitability even with low budgets</strong>. My approach focuses on practical and replicable strategies such as Airbnb, vacation rentals, buy-renovate-sell (house flipping) and efficient property management.',
-        intro3: 'I have published several <strong>practical books</strong> where I explain step by step how to invest safely and profitably, sharing my real market experience. My mission is to democratize access to real estate investment, showing that with proper training and the right strategies, anyone can build solid wealth.',
-        experienceTitle: 'My experience includes:',
-        exp1: '+50 properties managed in Airbnb and vacation rental modality',
-        exp2: '+20 successfully completed house flipping projects',
-        exp3: 'Training for over 300 beginner investors',
-        exp4: 'Author of multiple guides on real estate investment'
+        name: 'Joaquín Ignacio',
+        bio1: 'Author of the Tu Negocio Inmobiliario collection and developer of a proprietary methodology aimed at structuring and optimizing each phase of the real estate process.',
+        bio2: 'His career encompasses the <strong>comprehensive management of investment operations</strong> across various segments of the Spanish market, including urban housing, tourist properties, and rural land for agricultural use.',
+        bio3: 'Throughout his career, he has participated in numerous <strong>buying and selling processes, operation analysis, risk and feasibility assessment, mortgage negotiation, and financial structuring</strong> of real estate projects, applying an approach that integrates economic, documentary, and procedural criteria to ensure solid and replicable decisions within any investment strategy.',
+        bio4: 'He also has extensive experience in the <strong>launch and management of traditional and tourist rentals</strong>, as well as in the documentary and operational organization necessary to professionally maintain a real estate portfolio.',
+        bio5: 'His work focuses on transforming this practical experience into <strong>training content, technical guides, and applied resources</strong> that allow investors to understand, evaluate, and execute their decisions with criteria and confidence.',
+        bio6: 'As the <strong>intellectual founder of the Tu Negocio Inmobiliario project</strong>, Joaquín Ignacio provides the conceptual framework, methodology, and strategic guidelines that support the platform, offering a structured model oriented towards the continuous improvement of the investor.',
+        servicesTitle: 'Who provides the services',
+        servicesDesc: 'The professional services available on this website are provided exclusively by <strong>certified collaborating professionals</strong> in their respective areas (taxation, accounting, architecture, etc.). All of this is done following the training methodology developed by Joaquín Ignacio for the Tu Negocio Inmobiliario project and based on current regulations.'
       },
       services: {
         title: 'Services',
@@ -286,15 +286,15 @@ const resources = {
       },
       about: {
         title: 'Über mich',
-        subtitle: 'Immobilienvermögen von Grund auf aufbauen',
-        intro1: 'Ich bin <strong>Joaquín</strong>, Spezialist für Immobilieninvestitionen mit über 10 Jahren Erfahrung in der Branche. Meine Reise begann mit einer einfachen Frage: Wie kann ich passives Einkommen generieren, ohne große Anfangskapitalien zu benötigen?',
-        intro2: 'Im Laufe meiner Karriere habe ich Hunderten von Menschen geholfen, ihre ersten Schritte in der Welt der Immobilieninvestitionen zu machen und <strong>hohe Rentabilität auch mit niedrigen Budgets</strong> zu erzielen. Mein Ansatz konzentriert sich auf praktische und replizierbare Strategien wie Airbnb, Ferienvermietungen, Kaufen-Renovieren-Verkaufen (House Flipping) und effiziente Immobilienverwaltung.',
-        intro3: 'Ich habe mehrere <strong>praktische Bücher</strong> veröffentlicht, in denen ich Schritt für Schritt erkläre, wie man sicher und profitabel investiert und meine echte Markterfahrung teile. Meine Mission ist es, den Zugang zu Immobilieninvestitionen zu demokratisieren und zu zeigen, dass jeder mit der richtigen Ausbildung und den richtigen Strategien ein solides Vermögen aufbauen kann.',
-        experienceTitle: 'Meine Erfahrung umfasst:',
-        exp1: '+50 verwaltete Immobilien im Airbnb- und Ferienvermietungsbereich',
-        exp2: '+20 erfolgreich abgeschlossene House-Flipping-Projekte',
-        exp3: 'Schulung von über 300 Anfängerinvestoren',
-        exp4: 'Autor mehrerer Leitfäden zur Immobilieninvestition'
+        name: 'Joaquín Ignacio',
+        bio1: 'Autor der Sammlung Tu Negocio Inmobiliario und Entwickler einer eigenen Methodik zur Strukturierung und Optimierung jeder Phase des Immobilienprozesses.',
+        bio2: 'Seine Karriere umfasst das <strong>umfassende Management von Investitionsoperationen</strong> in verschiedenen Segmenten des spanischen Marktes, einschließlich Stadtwohnungen, Touristenimmobilien und landwirtschaftlichen Grundstücken.',
+        bio3: 'Im Laufe seiner Karriere hat er an zahlreichen <strong>Kauf- und Verkaufsprozessen, Operationsanalysen, Risiko- und Machbarkeitsbewertungen, Hypothekenverhandlungen und Finanzstrukturierungen</strong> von Immobilienprojekten teilgenommen, wobei er einen Ansatz anwendet, der wirtschaftliche, dokumentarische und verfahrenstechnische Kriterien integriert, um solide und replizierbare Entscheidungen innerhalb jeder Investitionsstrategie zu gewährleisten.',
+        bio4: 'Er verfügt auch über umfangreiche Erfahrung in der <strong>Einrichtung und Verwaltung von traditionellen und touristischen Vermietungen</strong> sowie in der dokumentarischen und operativen Organisation, die erforderlich ist, um ein Immobilienportfolio professionell zu führen.',
+        bio5: 'Seine Arbeit konzentriert sich darauf, diese praktische Erfahrung in <strong>Schulungsinhalte, technische Leitfäden und angewandte Ressourcen</strong> umzuwandeln, die es Investoren ermöglichen, ihre Entscheidungen mit Kriterien und Sicherheit zu verstehen, zu bewerten und umzusetzen.',
+        bio6: 'Als <strong>intellektueller Gründer des Projekts Tu Negocio Inmobiliario</strong> liefert Joaquín Ignacio den konzeptionellen Rahmen, die Methodik und die strategischen Richtlinien, die die Plattform unterstützen, und bietet ein strukturiertes Modell, das auf die kontinuierliche Verbesserung des Investors ausgerichtet ist.',
+        servicesTitle: 'Wer erbringt die Dienstleistungen',
+        servicesDesc: 'Die auf dieser Website verfügbaren professionellen Dienstleistungen werden ausschließlich von <strong>zertifizierten Fachkollegen</strong> in ihren jeweiligen Bereichen (Steuern, Buchhaltung, Architektur usw.) erbracht. All dies erfolgt nach der von Joaquín Ignacio für das Projekt Tu Negocio Inmobiliario entwickelten Schulungsmethodik und basierend auf den aktuellen Vorschriften.'
       },
       services: {
         title: 'Dienstleistungen',

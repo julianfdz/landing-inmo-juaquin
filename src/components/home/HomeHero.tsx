@@ -1,18 +1,31 @@
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import logoTni from "@/assets/logo-tni.png";
+import { useRef } from "react";
 
 const HomeHero = () => {
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"]
+  });
+
+  // Subtle parallax - content moves slower than scroll
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  // Fade out gently as user scrolls past
+  const opacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 0.8, 0]);
 
   const scrollToBooks = () => {
     document.getElementById('books')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/30 to-background" />
       
@@ -31,8 +44,11 @@ const HomeHero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_80%,hsl(var(--accent)/0.08),transparent_40%)]" />
       </div>
       
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="space-y-6">
+      <motion.div 
+        className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10"
+        style={{ opacity }}
+      >
+        <motion.div className="space-y-6" style={{ y: contentY }}>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold leading-tight"
             initial={{ opacity: 0, x: -30 }}
@@ -75,10 +91,11 @@ const HomeHero = () => {
               <ArrowRight className="h-5 w-5" />
             </Button>
           </motion.div>
-        </div>
+        </motion.div>
 
         <motion.div 
           className="relative flex items-center justify-center"
+          style={{ y: logoY }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -101,7 +118,7 @@ const HomeHero = () => {
             className="relative z-10 w-full max-w-md md:max-w-lg object-contain drop-shadow-xl"
           />
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

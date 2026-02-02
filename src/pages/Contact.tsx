@@ -8,10 +8,8 @@ const Contact = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl font-bold mb-4">{t('contact.title')}</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t('contact.subtitle')}
-          </p>
+          <h1 className="text-5xl font-bold mb-4">{t("contact.title")}</h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{t("contact.subtitle")}</p>
         </div>
 
         <div className="max-w-2xl mx-auto animate-fade-in-delay-1">
@@ -19,10 +17,9 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4">Estamos aquí para ayudarte</h2>
               <p className="text-muted-foreground leading-relaxed">
-                El equipo de <strong className="text-foreground">Tu Negocio Inmobiliario</strong> está 
-                a tu disposición para resolver cualquier duda. Ya sea sobre nuestros servicios, los recursos 
-                formativos o cualquier aspecto relacionado con tu camino en la inversión inmobiliaria, 
-                estaremos encantados de atenderte.
+                El equipo de <strong className="text-foreground">Tu Negocio Inmobiliario</strong> está a tu disposición
+                para resolver cualquier duda. Ya sea sobre nuestros servicios, los recursos formativos o cualquier
+                aspecto relacionado con tu camino en la inversión inmobiliaria, estaremos encantados de atenderte.
               </p>
             </div>
 
@@ -47,12 +44,12 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-bold mb-1">{t('contact.phone')}</h3>
+                  <h3 className="font-bold mb-1">{t("contact.phone")}</h3>
                   <a
                     href="tel:+34660034238"
                     className="text-muted-foreground hover:text-accent transition-colors text-lg"
                   >
-                    +34 660 03 42 38
+                    +34 683 46 67 06
                   </a>
                 </div>
               </div>

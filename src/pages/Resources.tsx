@@ -248,6 +248,18 @@ const Resources = () => {
               </div>
             </div>
           )}
+
+          {/* Disclaimer legal */}
+          <div className="mt-16 pt-8 border-t border-border">
+            <div className="bg-muted/30 rounded-xl p-6 text-center">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Recursos descargables creados por Joaquín como obra intelectual ©. 
+                Modelos generales, no personalizados, orientados únicamente a uso informativo. 
+                El usuario es responsable de adaptar los documentos a su situación concreta y, 
+                en caso necesario, consultar a un profesional cualificado.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

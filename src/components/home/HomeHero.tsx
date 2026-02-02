@@ -15,9 +15,10 @@ const HomeHero = () => {
   });
 
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  // El fade solo empieza después del 40% del scroll y termina al 100%
+  const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [1, 1, 0]);
 
   const scrollToBooks = () => {
     document.getElementById('books')?.scrollIntoView({ behavior: 'smooth' });

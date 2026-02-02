@@ -39,14 +39,14 @@ const HomeHero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            INVIERTE EN INMUEBLES
+            {t('hero.title1')}
             <motion.span 
               className="block text-accent mt-2"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              COMO UN PROFESIONAL
+              {t('hero.title2')}
             </motion.span>
           </motion.h1>
           
@@ -55,9 +55,8 @@ const HomeHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            Descubre la colección de guías prácticas de <strong className="text-foreground">Tu Negocio Inmobiliario</strong>, donde aprenderás de forma profesional y estructurada los aspectos esenciales de los cuatro procesos clave del sector: <span className="text-accent font-medium">comprar, vender, alquilar y solicitar hipotecas</span>.
-          </motion.p>
+            dangerouslySetInnerHTML={{ __html: t('hero.description') }}
+          />
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}

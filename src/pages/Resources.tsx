@@ -17,6 +17,24 @@ const Resources = () => {
       description: "Modelo de carta para solicitar la cancelación de póliza de seguro tras la venta del inmueble.",
       format: "Word",
       downloadUrl: "/downloads/solicitud-cancelacion-poliza.docx"
+    },
+    {
+      title: "CheckList Proceso de Compra",
+      description: "Lista de verificación completa con todos los pasos del proceso de compra de vivienda.",
+      format: "PDF",
+      downloadUrl: "/downloads/checklist-proceso-compra.pdf"
+    },
+    {
+      title: "Distintivos Turísticos Oficiales",
+      description: "Guía con los distintivos turísticos oficiales y su significado para identificar alojamientos legales.",
+      format: "PDF",
+      downloadUrl: "/downloads/distintivos-turisticos-oficiales.pdf"
+    },
+    {
+      title: "CheckList Proceso Hipotecario",
+      description: "Lista de verificación con todos los pasos y documentos necesarios para solicitar una hipoteca.",
+      format: "PDF",
+      downloadUrl: "/downloads/checklist-proceso-hipotecario.pdf"
     }
   ];
 
@@ -35,11 +53,6 @@ const Resources = () => {
       title: "Cuadro Excel Reparto IBI / Hipoteca",
       description: "Calculadora automática para gestionar gastos comunes en propiedades compartidas.",
       format: "Excel"
-    },
-    {
-      title: "Checklist: Pasos para Comprar Vivienda",
-      description: "Guía paso a paso con todos los puntos clave del proceso de compra inmobiliaria.",
-      format: "PDF"
     }
   ];
 

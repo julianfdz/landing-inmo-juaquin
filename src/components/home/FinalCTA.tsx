@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 const FinalCTA = () => {
   const { t } = useTranslation();
@@ -23,14 +23,14 @@ const FinalCTA = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div 
-          className="max-w-3xl mx-auto text-center space-y-8"
+          className="max-w-3xl mx-auto text-center space-y-6"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold leading-tight"
+            className="text-3xl md:text-5xl font-bold leading-tight"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -38,12 +38,35 @@ const FinalCTA = () => {
           >
             {t('finalCta.title')}
           </motion.h2>
+
+          <motion.p
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {t('finalCta.subtitle')}
+          </motion.p>
+
+          <motion.div
+            className="flex items-center justify-center gap-2 text-accent font-medium"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Mail className="h-5 w-5" />
+            <p className="text-base md:text-lg">
+              {t('finalCta.newsletter')}
+            </p>
+          </motion.div>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Button
               size="lg"

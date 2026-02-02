@@ -14,11 +14,9 @@ const HomeHero = () => {
     offset: ["start start", "end start"]
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
-  // El fade solo empieza después del 40% del scroll y termina al 100%
-  const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [1, 1, 0]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
+  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
 
   const scrollToBooks = () => {
     document.getElementById('books')?.scrollIntoView({ behavior: 'smooth' });
@@ -56,7 +54,7 @@ const HomeHero = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
         <motion.div 
           className="space-y-6"
-          style={{ y: textY, opacity }}
+          style={{ y: textY }}
         >
           <motion.h1 
             className="text-4xl md:text-6xl font-bold leading-tight"
@@ -123,7 +121,7 @@ const HomeHero = () => {
 
         <motion.div 
           className="relative flex items-center justify-center"
-          style={{ y: logoY, opacity }}
+          style={{ y: logoY }}
         >
           <motion.div 
             className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl rounded-full"

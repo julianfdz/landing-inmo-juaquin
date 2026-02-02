@@ -1,58 +1,74 @@
-import { Download, FileText, Clock } from "lucide-react";
+import { Download, Clock, BarChart3, FileEdit, ListChecks, Award, FileSignature, Home, Calculator, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+
+interface Resource {
+  title: string;
+  description: string;
+  format: string;
+  icon: LucideIcon;
+  downloadUrl?: string;
+}
 
 const Resources = () => {
   const { t } = useTranslation();
 
-  const availableResources = [
+  const availableResources: Resource[] = [
     {
       title: "Estructura de la Renta",
       description: "Documento explicativo sobre la estructura y componentes de la declaración de la renta.",
       format: "PDF",
+      icon: BarChart3,
       downloadUrl: "/downloads/estructura-renta.pdf"
     },
     {
       title: "Solicitud de Cancelación de Póliza",
       description: "Modelo de carta para solicitar la cancelación de póliza de seguro tras la venta del inmueble.",
       format: "Word",
+      icon: FileEdit,
       downloadUrl: "/downloads/solicitud-cancelacion-poliza.docx"
     },
     {
       title: "CheckList Proceso de Compra",
       description: "Lista de verificación completa con todos los pasos del proceso de compra de vivienda.",
       format: "PDF",
+      icon: ListChecks,
       downloadUrl: "/downloads/checklist-proceso-compra.pdf"
     },
     {
       title: "Distintivos Turísticos Oficiales",
       description: "Guía con los distintivos turísticos oficiales y su significado para identificar alojamientos legales.",
       format: "PDF",
+      icon: Award,
       downloadUrl: "/downloads/distintivos-turisticos-oficiales.pdf"
     },
     {
       title: "CheckList Proceso Hipotecario",
       description: "Lista de verificación con todos los pasos y documentos necesarios para solicitar una hipoteca.",
       format: "PDF",
+      icon: ListChecks,
       downloadUrl: "/downloads/checklist-proceso-hipotecario.pdf"
     }
   ];
 
-  const comingSoonResources = [
+  const comingSoonResources: Resource[] = [
     {
       title: "Modelo Contrato de Arras",
       description: "Plantilla profesional en Word/PDF para formalizar contratos de arras en compraventas inmobiliarias.",
-      format: "Word/PDF"
+      format: "Word/PDF",
+      icon: FileSignature
     },
     {
       title: "Modelo Contrato de Alquiler",
       description: "Contrato de alquiler completo y actualizado según la legislación vigente.",
-      format: "Word/PDF"
+      format: "Word/PDF",
+      icon: Home
     },
     {
       title: "Cuadro Excel Reparto IBI / Hipoteca",
       description: "Calculadora automática para gestionar gastos comunes en propiedades compartidas.",
-      format: "Excel"
+      format: "Excel",
+      icon: Calculator
     }
   ];
 
@@ -87,7 +103,7 @@ const Resources = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <FileText className="h-6 w-6 text-accent" />
+                      <resource.icon className="h-6 w-6 text-accent" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-start justify-between gap-4 mb-2">
@@ -129,7 +145,7 @@ const Resources = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                      <FileText className="h-6 w-6 text-muted-foreground" />
+                      <resource.icon className="h-6 w-6 text-muted-foreground" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-start justify-between gap-4 mb-2">

@@ -11,18 +11,18 @@ const ResourcesCTA = () => {
   const resources = [
     {
       icon: FileText,
-      title: "Plantillas de contratos",
-      description: "Modelos listos para usar"
+      titleKey: "resourcesCta.contracts",
+      descKey: "resourcesCta.contractsDesc"
     },
     {
       icon: Download,
-      title: "Hojas de cálculo",
-      description: "Análisis y simuladores"
+      titleKey: "resourcesCta.spreadsheets",
+      descKey: "resourcesCta.spreadsheetsDesc"
     },
     {
       icon: CheckSquare,
-      title: "Checklists",
-      description: "Guías paso a paso"
+      titleKey: "resourcesCta.checklists",
+      descKey: "resourcesCta.checklistsDesc"
     }
   ];
 
@@ -45,11 +45,11 @@ const ResourcesCTA = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            También tienes disponibles{" "}
-            <span className="text-accent">mis recursos</span>
+            {t('resourcesCta.title')}{" "}
+            <span className="text-accent">{t('resourcesCta.titleAccent')}</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Plantillas, hojas de cálculo, modelos de contrato y herramientas prácticas para acompañarte en cada operación inmobiliaria.
+            {t('resourcesCta.subtitle')}
           </p>
 
           <div className="grid sm:grid-cols-3 gap-6 mb-10">
@@ -69,8 +69,8 @@ const ResourcesCTA = () => {
                 <div className="w-12 h-12 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center">
                   <resource.icon className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="font-semibold mb-1">{resource.title}</h3>
-                <p className="text-sm text-muted-foreground">{resource.description}</p>
+                <h3 className="font-semibold mb-1">{t(resource.titleKey)}</h3>
+                <p className="text-sm text-muted-foreground">{t(resource.descKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -89,7 +89,7 @@ const ResourcesCTA = () => {
                 hover:shadow-[0_12px_40px_-8px_hsl(var(--primary)/0.4)]
                 transition-all duration-300"
             >
-              Ver todos los recursos
+              {t('resourcesCta.button')}
               <ArrowRight className="h-5 w-5" />
             </Button>
           </motion.div>

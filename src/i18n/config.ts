@@ -30,7 +30,29 @@ const resources = {
         title: 'Mis Libros',
         subtitle: 'Guías prácticas para inversores inmobiliarios',
         cta: 'Ver en Amazon',
-        moreInfo: 'Más info'
+        moreInfo: 'Más info',
+        comingSoon: 'Próximamente',
+        availableSoon: 'Disponible próximamente',
+        book1Title: 'Tu Negocio Inmobiliario. Vol. 1: Guía práctica para comprar viviendas en España',
+        book1Desc: 'Aprende a comprar una vivienda entendiendo cada paso del proceso, evitando errores habituales y tomando decisiones con criterio propio.',
+        book2Title: 'Tu Negocio Inmobiliario. Vol. 2: Guía práctica para solicitar hipotecas en España',
+        book2Desc: 'Solicita y negocia tu hipoteca entendiendo qué te ofrece realmente el banco, comparando ofertas con criterios objetivos y evitando cláusulas abusivas.',
+        book3Title: 'Tu Negocio Inmobiliario. Vol. 3: Guía práctica para alquilar viviendas en España',
+        book3Desc: 'Aprende todo lo necesario para alquilar viviendas en España con criterio y seguridad.',
+        book4Title: 'Tu Negocio Inmobiliario. Vol. 4: Guía práctica para vender viviendas en España',
+        book4Desc: 'Domina el proceso de venta de viviendas con estrategias efectivas y conocimiento del mercado.'
+      },
+      resourcesCta: {
+        title: 'También tienes disponibles',
+        titleAccent: 'mis recursos',
+        subtitle: 'Plantillas, hojas de cálculo, modelos de contrato y herramientas prácticas para acompañarte en cada operación inmobiliaria.',
+        contracts: 'Plantillas de contratos',
+        contractsDesc: 'Modelos listos para usar',
+        spreadsheets: 'Hojas de cálculo',
+        spreadsheetsDesc: 'Análisis y simuladores',
+        checklists: 'Checklists',
+        checklistsDesc: 'Guías paso a paso',
+        button: 'Ver todos los recursos'
       },
       quote: {
         text: 'No esperes para comprar bienes raíces. Compra bienes raíces y espera.',
@@ -168,7 +190,29 @@ const resources = {
         title: 'My Books',
         subtitle: 'Practical guides for real estate investors',
         cta: 'View on Amazon',
-        moreInfo: 'More info'
+        moreInfo: 'More info',
+        comingSoon: 'Coming Soon',
+        availableSoon: 'Available soon',
+        book1Title: 'Tu Negocio Inmobiliario. Vol. 1: Practical guide to buying homes in Spain',
+        book1Desc: 'Learn to buy a home understanding each step of the process, avoiding common mistakes and making decisions with your own criteria.',
+        book2Title: 'Tu Negocio Inmobiliario. Vol. 2: Practical guide to applying for mortgages in Spain',
+        book2Desc: 'Apply for and negotiate your mortgage understanding what the bank really offers you, comparing offers with objective criteria and avoiding abusive clauses.',
+        book3Title: 'Tu Negocio Inmobiliario. Vol. 3: Practical guide to renting homes in Spain',
+        book3Desc: 'Learn everything you need to rent homes in Spain with criteria and security.',
+        book4Title: 'Tu Negocio Inmobiliario. Vol. 4: Practical guide to selling homes in Spain',
+        book4Desc: 'Master the home selling process with effective strategies and market knowledge.'
+      },
+      resourcesCta: {
+        title: 'You also have available',
+        titleAccent: 'my resources',
+        subtitle: 'Templates, spreadsheets, contract models and practical tools to accompany you in every real estate operation.',
+        contracts: 'Contract templates',
+        contractsDesc: 'Ready-to-use models',
+        spreadsheets: 'Spreadsheets',
+        spreadsheetsDesc: 'Analysis and simulators',
+        checklists: 'Checklists',
+        checklistsDesc: 'Step-by-step guides',
+        button: 'View all resources'
       },
       quote: {
         text: "Don't wait to buy real estate. Buy real estate and wait.",
@@ -306,7 +350,29 @@ const resources = {
         title: 'Meine Bücher',
         subtitle: 'Praktische Leitfäden für Immobilieninvestoren',
         cta: 'Auf Amazon ansehen',
-        moreInfo: 'Mehr Info'
+        moreInfo: 'Mehr Info',
+        comingSoon: 'Demnächst',
+        availableSoon: 'Bald verfügbar',
+        book1Title: 'Tu Negocio Inmobiliario. Vol. 1: Praktischer Leitfaden zum Kauf von Häusern in Spanien',
+        book1Desc: 'Lernen Sie, ein Haus zu kaufen und jeden Schritt des Prozesses zu verstehen, häufige Fehler zu vermeiden und Entscheidungen mit eigenen Kriterien zu treffen.',
+        book2Title: 'Tu Negocio Inmobiliario. Vol. 2: Praktischer Leitfaden zur Beantragung von Hypotheken in Spanien',
+        book2Desc: 'Beantragen und verhandeln Sie Ihre Hypothek, verstehen Sie, was die Bank wirklich bietet, vergleichen Sie Angebote mit objektiven Kriterien und vermeiden Sie missbräuchliche Klauseln.',
+        book3Title: 'Tu Negocio Inmobiliario. Vol. 3: Praktischer Leitfaden zur Vermietung von Häusern in Spanien',
+        book3Desc: 'Lernen Sie alles, was Sie brauchen, um Häuser in Spanien mit Kriterien und Sicherheit zu vermieten.',
+        book4Title: 'Tu Negocio Inmobiliario. Vol. 4: Praktischer Leitfaden zum Verkauf von Häusern in Spanien',
+        book4Desc: 'Meistern Sie den Hausverkaufsprozess mit effektiven Strategien und Marktkenntnissen.'
+      },
+      resourcesCta: {
+        title: 'Sie haben auch verfügbar',
+        titleAccent: 'meine Ressourcen',
+        subtitle: 'Vorlagen, Tabellenkalkulationen, Vertragsmodelle und praktische Tools, die Sie bei jeder Immobilienoperation begleiten.',
+        contracts: 'Vertragsvorlagen',
+        contractsDesc: 'Gebrauchsfertige Modelle',
+        spreadsheets: 'Tabellenkalkulationen',
+        spreadsheetsDesc: 'Analyse und Simulatoren',
+        checklists: 'Checklisten',
+        checklistsDesc: 'Schritt-für-Schritt-Anleitungen',
+        button: 'Alle Ressourcen anzeigen'
       },
       quote: {
         text: 'Warten Sie nicht, um Immobilien zu kaufen. Kaufen Sie Immobilien und warten Sie.',

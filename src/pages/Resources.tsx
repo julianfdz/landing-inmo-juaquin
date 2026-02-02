@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Download, Clock, BarChart3, FileEdit, ListChecks, Award, FileSignature, Home, Calculator, LucideIcon, Search, Palmtree } from "lucide-react";
+import { Download, Clock, BarChart3, FileEdit, ListChecks, Award, FileSignature, Home, Calculator, LucideIcon, Search, Palmtree, Table, TrendingUp, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "react-i18next";
@@ -72,6 +72,27 @@ const Resources = () => {
       format: "Word",
       icon: FileSignature,
       downloadUrl: "/downloads/arras-penitenciales.docx"
+    },
+    {
+      title: "Tabla de Análisis y Selección de Inmuebles",
+      description: "Hoja de cálculo para analizar y comparar inmuebles antes de tomar una decisión de compra.",
+      format: "Excel",
+      icon: Table,
+      downloadUrl: "/downloads/tabla-analisis-seleccion-inmuebles.xlsx"
+    },
+    {
+      title: "Tabla de Gastos Iniciales en Inmuebles",
+      description: "Calculadora de todos los gastos iniciales asociados a la compra de un inmueble.",
+      format: "Excel",
+      icon: Wallet,
+      downloadUrl: "/downloads/tabla-gastos-iniciales-inmuebles.xlsx"
+    },
+    {
+      title: "Tabla de Previsiones de Ingresos por Arrendamiento",
+      description: "Hoja de cálculo para estimar y proyectar los ingresos por alquiler de un inmueble.",
+      format: "Excel",
+      icon: TrendingUp,
+      downloadUrl: "/downloads/tabla-previsiones-ingresos-arrendamiento.xlsx"
     }
   ];
 

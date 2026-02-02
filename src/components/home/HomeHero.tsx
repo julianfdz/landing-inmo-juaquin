@@ -14,10 +14,10 @@ const HomeHero = () => {
     offset: ["start start", "end start"]
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   const scrollToBooks = () => {
     document.getElementById('books')?.scrollIntoView({ behavior: 'smooth' });
@@ -117,18 +117,6 @@ const HomeHero = () => {
               {t('hero.cta')}
               <ArrowRight className="h-5 w-5" />
             </Button>
-          </motion.div>
-
-          {/* Texto adicional inferior */}
-          <motion.div
-            className="pt-6 border-t border-border/50"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            <p className="text-sm text-muted-foreground italic leading-relaxed">
-              Con los recursos descargables y los volúmenes de Tu Negocio Inmobiliario, accede a una <strong className="text-foreground not-italic">autoformación completa de 0 a 100</strong> para aprender a gestionar las diferentes partes del proceso inmobiliario con mentalidad profesional.
-            </p>
           </motion.div>
         </motion.div>
 

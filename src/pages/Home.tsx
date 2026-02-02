@@ -1,4 +1,5 @@
 import HomeHero from "@/components/home/HomeHero";
+import IntroSection from "@/components/home/IntroSection";
 import BooksSection from "@/components/home/BooksSection";
 import ResourcesCTA from "@/components/home/ResourcesCTA";
 import QuoteSection from "@/components/home/QuoteSection";
@@ -16,7 +17,10 @@ const Home = () => {
       <div className="relative z-10">
         <HomeHero />
         
-        {/* Divider: Hero → Books */}
+        {/* Intro section with key features */}
+        <IntroSection />
+        
+        {/* Divider: Intro → Books */}
         <AnimatedWaveLayered className="-mt-1 bg-transparent" />
         
         <BooksSection />

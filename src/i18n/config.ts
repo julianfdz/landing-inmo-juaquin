@@ -29,7 +29,9 @@ const resources = {
         author: 'Will Rogers'
       },
       finalCta: {
-        title: 'Empieza hoy tu camino hacia la inversión inmobiliaria rentable',
+        title: 'Empieza tu camino hacia la inversión inmobiliaria premeditada',
+        subtitle: 'Aprende a controlar todo el proceso y mantente actualizado ante cualquier novedad.',
+        newsletter: 'Suscríbete a la newsletter para recibir novedades legislativas, contenido exclusivo y consejos inmobiliarios.',
         button: 'Contáctame'
       },
       about: {
@@ -141,7 +143,9 @@ const resources = {
         author: 'Will Rogers'
       },
       finalCta: {
-        title: 'Start your journey to profitable real estate investment today',
+        title: 'Start your journey to premeditated real estate investment',
+        subtitle: 'Learn to control the entire process and stay updated on any news.',
+        newsletter: 'Subscribe to the newsletter to receive legislative updates, exclusive content and real estate tips.',
         button: 'Contact me'
       },
       about: {
@@ -253,7 +257,9 @@ const resources = {
         author: 'Will Rogers'
       },
       finalCta: {
-        title: 'Beginnen Sie heute Ihren Weg zur profitablen Immobilieninvestition',
+        title: 'Beginnen Sie Ihren Weg zur durchdachten Immobilieninvestition',
+        subtitle: 'Lernen Sie, den gesamten Prozess zu kontrollieren und bleiben Sie über alle Neuigkeiten informiert.',
+        newsletter: 'Abonnieren Sie den Newsletter, um Gesetzesänderungen, exklusive Inhalte und Immobilientipps zu erhalten.',
         button: 'Kontaktieren Sie mich'
       },
       about: {

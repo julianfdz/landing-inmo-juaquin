@@ -50,39 +50,50 @@ const resources = {
         title: 'Servicios',
         subtitle: 'Soluciones profesionales para impulsar tu éxito en inversión inmobiliaria',
         ctaTitle: '¿Interesado en algún servicio?',
-        ctaDesc: 'Contacta conmigo para una consulta inicial gratuita y descubre cómo puedo ayudarte',
-        ctaButton: 'Contáctame',
+        ctaDesc: 'Contacta con nosotros y descubre cómo podemos ayudarte para dar el siguiente paso.',
+        ctaButton: 'Contáctanos',
         service1: {
-          title: 'Asesoría en Inversión Inmobiliaria',
-          description: 'Te ayudo a identificar oportunidades de inversión, analizar rentabilidades y crear estrategias personalizadas según tu presupuesto y objetivos.',
-          feature1: 'Análisis de mercado y zonas rentables',
-          feature2: 'Estrategias de compra e inversión',
-          feature3: 'Gestión de Airbnb y pisos turísticos',
-          feature4: 'House flipping y reformas rentables'
+          title: 'Diseño de Estrategias de Inversión',
+          description: 'Diseño de estrategias de inversión adaptadas a tus objetivos para maximizar el rendimiento de tu patrimonio inmobiliario.',
+          feature1: 'Análisis de viabilidad de operaciones',
+          feature2: 'Comparación de productos y escenarios',
+          feature3: 'Evaluación de riesgos y oportunidades',
+          feature4: 'Optimización del rendimiento a corto y largo plazo'
         },
         service2: {
-          title: 'Asesoría Fiscal y Contable',
-          description: 'Servicios especializados de asesoría fiscal y contable para optimizar la gestión de tus inversiones inmobiliarias.',
-          feature1: 'Declaraciones fiscales optimizadas',
-          feature2: 'Planificación tributaria',
-          feature3: 'Gestión contable de propiedades',
-          feature4: 'Asesoramiento en deducciones'
+          title: 'Solicitud de Notas Simples Registrales',
+          description: 'Obtén de forma rápida y segura la información registral de cualquier inmueble.',
+          feature1: 'Gestión directa de solicitudes',
+          feature2: 'Entrega en formato digital'
         },
         service3: {
-          title: 'Mentorías Personalizadas',
-          description: 'Sesiones individuales donde te guío paso a paso en tu proyecto de inversión inmobiliaria, desde cero hasta tu primera propiedad rentable.',
-          feature1: 'Sesiones 1 a 1 online o presencial',
-          feature2: 'Plan de acción personalizado',
-          feature3: 'Seguimiento de proyectos',
-          feature4: 'Acceso a recursos exclusivos'
+          title: 'Asesoría Fiscal',
+          description: 'Planificación y gestión fiscal especializada en inversión inmobiliaria, ofrecida por asesores fiscales certificados.',
+          feature1: 'Asesoramiento fiscal a personas físicas y jurídicas',
+          feature2: 'Declaración de la renta',
+          feature3: 'Presentación de modelos e impuestos (compra, venta, alquiler)',
+          feature4: 'Gestión del depósito de fianzas por arrendamiento',
+          feature5: 'Optimización fiscal de operaciones inmobiliarias'
         },
         service4: {
-          title: 'Formación y Cursos',
-          description: 'Programas formativos completos sobre inversión inmobiliaria, desde nivel inicial hasta estrategias avanzadas de rentabilidad.',
-          feature1: 'Cursos online y presenciales',
-          feature2: 'Material didáctico exclusivo',
-          feature3: 'Casos prácticos reales',
-          feature4: 'Comunidad de inversores'
+          title: 'Asesoría Contable',
+          description: 'Organización y seguimiento contable para propietarios e inversores inmobiliarios, ofrecida por asesores contables certificados.',
+          feature1: 'Asesoramiento contable a personas físicas y jurídicas',
+          feature2: 'Contabilidad de operaciones inmobiliarias',
+          feature3: 'Servicios contables para empresas y autónomos (balance, libros obligatorios, etc.)'
+        },
+        service5: {
+          title: 'Asesoramiento Internacional',
+          description: 'Orientación práctica para extranjeros residentes o no residentes que deseen invertir en España.',
+          feature1: 'Análisis fiscal general',
+          feature2: 'Trámites frecuentes',
+          feature3: 'Acompañamiento informativo en compra, alquiler o gestión patrimonial'
+        },
+        service6: {
+          title: 'Servicios Adaptados a tus Necesidades',
+          description: 'Si tienes un proyecto concreto y necesitas apoyo adicional, cuéntanos qué necesitas y te ofreceremos la solución más adecuada.',
+          feature1: 'Análisis personalizado de tu situación',
+          feature2: 'Propuesta de solución a medida'
         }
       },
       resources: {
@@ -164,39 +175,50 @@ const resources = {
         title: 'Services',
         subtitle: 'Professional solutions to boost your success in real estate investment',
         ctaTitle: 'Interested in any service?',
-        ctaDesc: 'Contact me for a free initial consultation and discover how I can help you',
-        ctaButton: 'Contact me',
+        ctaDesc: 'Contact us and discover how we can help you take the next step.',
+        ctaButton: 'Contact us',
         service1: {
-          title: 'Real Estate Investment Advisory',
-          description: 'I help you identify investment opportunities, analyze returns and create personalized strategies according to your budget and goals.',
-          feature1: 'Market and profitable areas analysis',
-          feature2: 'Purchase and investment strategies',
-          feature3: 'Airbnb and vacation rental management',
-          feature4: 'House flipping and profitable renovations'
+          title: 'Investment Strategy Design',
+          description: 'Investment strategy design tailored to your goals to maximize the performance of your real estate portfolio.',
+          feature1: 'Operation feasibility analysis',
+          feature2: 'Product and scenario comparison',
+          feature3: 'Risk and opportunity assessment',
+          feature4: 'Short and long-term performance optimization'
         },
         service2: {
-          title: 'Tax and Accounting Advisory',
-          description: 'Specialized tax and accounting advisory services to optimize the management of your real estate investments.',
-          feature1: 'Optimized tax returns',
-          feature2: 'Tax planning',
-          feature3: 'Property accounting management',
-          feature4: 'Deduction advice'
+          title: 'Property Registry Notes Request',
+          description: 'Quickly and securely obtain the registry information of any property.',
+          feature1: 'Direct request management',
+          feature2: 'Digital format delivery'
         },
         service3: {
-          title: 'Personalized Mentoring',
-          description: 'Individual sessions where I guide you step by step in your real estate investment project, from scratch to your first profitable property.',
-          feature1: 'One-on-one sessions online or in person',
-          feature2: 'Personalized action plan',
-          feature3: 'Project tracking',
-          feature4: 'Access to exclusive resources'
+          title: 'Tax Advisory',
+          description: 'Specialized tax planning and management for real estate investment, provided by certified tax advisors.',
+          feature1: 'Tax advice for individuals and companies',
+          feature2: 'Income tax returns',
+          feature3: 'Filing of forms and taxes (purchase, sale, rental)',
+          feature4: 'Rental deposit management with authorities',
+          feature5: 'Tax optimization of real estate operations'
         },
         service4: {
-          title: 'Training and Courses',
-          description: 'Complete training programs on real estate investment, from beginner level to advanced profitability strategies.',
-          feature1: 'Online and in-person courses',
-          feature2: 'Exclusive educational material',
-          feature3: 'Real practical cases',
-          feature4: 'Investor community'
+          title: 'Accounting Advisory',
+          description: 'Accounting organization and tracking for property owners and real estate investors, provided by certified accountants.',
+          feature1: 'Accounting advice for individuals and companies',
+          feature2: 'Real estate operations accounting',
+          feature3: 'Accounting services for companies and freelancers (balance sheet, mandatory books, etc.)'
+        },
+        service5: {
+          title: 'International Advisory',
+          description: 'Practical guidance for foreign residents or non-residents who wish to invest in Spain.',
+          feature1: 'General tax analysis',
+          feature2: 'Common procedures',
+          feature3: 'Informative support in purchase, rental or asset management'
+        },
+        service6: {
+          title: 'Services Tailored to Your Needs',
+          description: 'If you have a specific project and need additional support, tell us what you need and we will offer you the most suitable solution.',
+          feature1: 'Personalized analysis of your situation',
+          feature2: 'Custom solution proposal'
         }
       },
       resources: {
@@ -278,39 +300,50 @@ const resources = {
         title: 'Dienstleistungen',
         subtitle: 'Professionelle Lösungen zur Förderung Ihres Erfolgs bei Immobilieninvestitionen',
         ctaTitle: 'Interesse an einer Dienstleistung?',
-        ctaDesc: 'Kontaktieren Sie mich für eine kostenlose Erstberatung und erfahren Sie, wie ich Ihnen helfen kann',
-        ctaButton: 'Kontaktieren Sie mich',
+        ctaDesc: 'Kontaktieren Sie uns und erfahren Sie, wie wir Ihnen beim nächsten Schritt helfen können.',
+        ctaButton: 'Kontaktieren Sie uns',
         service1: {
-          title: 'Immobilieninvestitionsberatung',
-          description: 'Ich helfe Ihnen, Investitionsmöglichkeiten zu identifizieren, Renditen zu analysieren und personalisierte Strategien nach Ihrem Budget und Ihren Zielen zu erstellen.',
-          feature1: 'Markt- und rentable Gebietsanalyse',
-          feature2: 'Kauf- und Investitionsstrategien',
-          feature3: 'Airbnb- und Ferienvermietungsmanagement',
-          feature4: 'House Flipping und rentable Renovierungen'
+          title: 'Investitionsstrategie-Design',
+          description: 'Entwicklung von Investitionsstrategien, die auf Ihre Ziele zugeschnitten sind, um die Rendite Ihres Immobilienportfolios zu maximieren.',
+          feature1: 'Machbarkeitsanalyse von Operationen',
+          feature2: 'Produkt- und Szenarienvergleich',
+          feature3: 'Risiko- und Chancenbewertung',
+          feature4: 'Kurz- und langfristige Renditeoptimierung'
         },
         service2: {
-          title: 'Steuer- und Buchhaltungsberatung',
-          description: 'Spezialisierte Steuer- und Buchhaltungsberatung zur Optimierung der Verwaltung Ihrer Immobilieninvestitionen.',
-          feature1: 'Optimierte Steuererklärungen',
-          feature2: 'Steuerplanung',
-          feature3: 'Immobilienbuchhaltung',
-          feature4: 'Abzugsberatung'
+          title: 'Grundbuchauszug-Anforderung',
+          description: 'Erhalten Sie schnell und sicher die Registrierungsinformationen jeder Immobilie.',
+          feature1: 'Direkte Antragsbearbeitung',
+          feature2: 'Lieferung im digitalen Format'
         },
         service3: {
-          title: 'Personalisiertes Mentoring',
-          description: 'Einzelsitzungen, in denen ich Sie Schritt für Schritt bei Ihrem Immobilieninvestitionsprojekt begleite, von Null bis zu Ihrer ersten rentablen Immobilie.',
-          feature1: 'Einzelsitzungen online oder persönlich',
-          feature2: 'Personalisierter Aktionsplan',
-          feature3: 'Projektverfolgung',
-          feature4: 'Zugang zu exklusiven Ressourcen'
+          title: 'Steuerberatung',
+          description: 'Spezialisierte Steuerplanung und -verwaltung für Immobilieninvestitionen, angeboten von zertifizierten Steuerberatern.',
+          feature1: 'Steuerberatung für Privatpersonen und Unternehmen',
+          feature2: 'Einkommensteuererklärungen',
+          feature3: 'Einreichung von Formularen und Steuern (Kauf, Verkauf, Vermietung)',
+          feature4: 'Mietkautionsverwaltung bei Behörden',
+          feature5: 'Steueroptimierung von Immobilienoperationen'
         },
         service4: {
-          title: 'Schulung und Kurse',
-          description: 'Komplette Schulungsprogramme für Immobilieninvestitionen, vom Anfängerniveau bis zu fortgeschrittenen Rentabilitätsstrategien.',
-          feature1: 'Online- und Präsenzkurse',
-          feature2: 'Exklusives Lehrmaterial',
-          feature3: 'Echte praktische Fälle',
-          feature4: 'Investorengemeinschaft'
+          title: 'Buchhaltungsberatung',
+          description: 'Buchhaltungsorganisation und -verfolgung für Immobilieneigentümer und Investoren, angeboten von zertifizierten Buchhaltern.',
+          feature1: 'Buchhaltungsberatung für Privatpersonen und Unternehmen',
+          feature2: 'Buchhaltung für Immobilienoperationen',
+          feature3: 'Buchhaltungsservices für Unternehmen und Freiberufler (Bilanz, Pflichtbücher, etc.)'
+        },
+        service5: {
+          title: 'Internationale Beratung',
+          description: 'Praktische Orientierung für ausländische Residenten oder Nicht-Residenten, die in Spanien investieren möchten.',
+          feature1: 'Allgemeine Steueranalyse',
+          feature2: 'Häufige Verfahren',
+          feature3: 'Informative Begleitung bei Kauf, Miete oder Vermögensverwaltung'
+        },
+        service6: {
+          title: 'An Ihre Bedürfnisse angepasste Dienste',
+          description: 'Wenn Sie ein konkretes Projekt haben und zusätzliche Unterstützung benötigen, teilen Sie uns mit, was Sie brauchen, und wir bieten Ihnen die passendste Lösung.',
+          feature1: 'Personalisierte Analyse Ihrer Situation',
+          feature2: 'Maßgeschneiderte Lösungsvorschläge'
         }
       },
       resources: {

@@ -1,4 +1,4 @@
-import { Building2, Calculator, FileText, Users } from "lucide-react";
+import { TrendingUp, FileSearch, Calculator, BookOpen, Globe, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,7 +9,7 @@ const Services = () => {
 
   const services = [
     {
-      icon: Building2,
+      icon: TrendingUp,
       titleKey: "services.service1.title",
       descriptionKey: "services.service1.description",
       featuresKeys: [
@@ -20,36 +20,53 @@ const Services = () => {
       ]
     },
     {
-      icon: Calculator,
+      icon: FileSearch,
       titleKey: "services.service2.title",
       descriptionKey: "services.service2.description",
       featuresKeys: [
         "services.service2.feature1",
-        "services.service2.feature2",
-        "services.service2.feature3",
-        "services.service2.feature4"
+        "services.service2.feature2"
       ]
     },
     {
-      icon: FileText,
+      icon: Calculator,
       titleKey: "services.service3.title",
       descriptionKey: "services.service3.description",
       featuresKeys: [
         "services.service3.feature1",
         "services.service3.feature2",
         "services.service3.feature3",
-        "services.service3.feature4"
+        "services.service3.feature4",
+        "services.service3.feature5"
       ]
     },
     {
-      icon: Users,
+      icon: BookOpen,
       titleKey: "services.service4.title",
       descriptionKey: "services.service4.description",
       featuresKeys: [
         "services.service4.feature1",
         "services.service4.feature2",
-        "services.service4.feature3",
-        "services.service4.feature4"
+        "services.service4.feature3"
+      ]
+    },
+    {
+      icon: Globe,
+      titleKey: "services.service5.title",
+      descriptionKey: "services.service5.description",
+      featuresKeys: [
+        "services.service5.feature1",
+        "services.service5.feature2",
+        "services.service5.feature3"
+      ]
+    },
+    {
+      icon: Settings,
+      titleKey: "services.service6.title",
+      descriptionKey: "services.service6.description",
+      featuresKeys: [
+        "services.service6.feature1",
+        "services.service6.feature2"
       ]
     }
   ];
@@ -64,25 +81,25 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-16">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="bg-card rounded-xl border border-border p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-in"
+                className="bg-card rounded-xl border border-border p-6 hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-in flex flex-col"
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-                  <Icon className="h-8 w-8 text-accent" />
+                <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-5">
+                  <Icon className="h-7 w-7 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{t(service.titleKey)}</h3>
-                <p className="text-muted-foreground mb-6">{t(service.descriptionKey)}</p>
+                <h3 className="text-xl font-bold mb-3">{t(service.titleKey)}</h3>
+                <p className="text-muted-foreground text-sm mb-5 flex-grow">{t(service.descriptionKey)}</p>
                 <ul className="space-y-2">
                   {service.featuresKeys.map((featureKey, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="text-accent mt-1">✓</span>
-                      <span className="text-sm">{t(featureKey)}</span>
+                      <span className="text-accent mt-0.5 text-sm">✓</span>
+                      <span className="text-sm text-muted-foreground">{t(featureKey)}</span>
                     </li>
                   ))}
                 </ul>

@@ -27,10 +27,10 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: t('nav.home') },
-    { path: "/sobre-mi", label: t('nav.about') },
     { path: "/servicios", label: t('nav.services') },
     { path: "/recursos", label: t('nav.resources') },
     { path: "/blog", label: t('nav.blog') },
+    { path: "/sobre-mi", label: t('nav.about') },
     { path: "/contacto", label: t('nav.contact') },
   ];
 

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logoTni from "@/assets/logo-tni.png";
+import logoTni from "@/assets/logo-tni-circle.png";
 import { useRef } from "react";
 
 const HomeHero = () => {

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import logoTni from "@/assets/logo-tni.png";
 
 const About = () => {
   const { t } = useTranslation();
@@ -11,10 +12,12 @@ const About = () => {
           
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="md:col-span-1 animate-fade-in-delay-1">
-              <div className="aspect-square bg-gradient-to-br from-muted to-background rounded-2xl overflow-hidden border border-border">
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-8xl">👤</span>
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-muted to-background rounded-2xl overflow-hidden border border-border p-4">
+                <img 
+                  src={logoTni} 
+                  alt="Tu Negocio Inmobiliario" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 

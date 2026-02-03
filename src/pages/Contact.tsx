@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Info } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -15,11 +15,9 @@ const Contact = () => {
         <div className="max-w-2xl mx-auto animate-fade-in-delay-1">
           <div className="bg-card rounded-xl border border-border p-8 space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-4">Estamos aquí para ayudarte</h2>
+              <h2 className="text-2xl font-bold mb-4">{t("contact.helpTitle")}</h2>
               <p className="text-muted-foreground leading-relaxed">
-                El equipo de <strong className="text-foreground">Tu Negocio Inmobiliario</strong> está a tu disposición
-                para resolver cualquier duda. Ya sea sobre nuestros servicios, los recursos formativos o cualquier
-                aspecto relacionado con tu camino en la inversión inmobiliaria, estaremos encantados de atenderte.
+                {t("contact.helpDescription")}
               </p>
             </div>
 
@@ -53,6 +51,14 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+            </div>
+
+            {/* Disclaimer elegante */}
+            <div className="flex items-start gap-3 p-4 bg-accent/5 border border-accent/20 rounded-lg">
+              <Info className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-muted-foreground italic">
+                {t("contact.phoneDisclaimer")}
+              </p>
             </div>
           </div>
         </div>

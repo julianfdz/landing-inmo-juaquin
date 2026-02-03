@@ -183,6 +183,8 @@ const resources = {
       contact: {
         title: 'Contacto',
         subtitle: '¿Tienes dudas o quieres empezar tu proyecto? Estoy aquí para ayudarte',
+        helpTitle: 'Estamos aquí para ayudarte',
+        helpDescription: 'El equipo de Tu Negocio Inmobiliario está a tu disposición para resolver cualquier duda. Ya sea sobre nuestros servicios, los recursos formativos o cualquier aspecto relacionado con tu camino en la inversión inmobiliaria, estaremos encantados de atenderte.',
         formTitle: 'Hablemos de tu proyecto',
         formDesc: 'Rellena el formulario y me pondré en contacto contigo en menos de 24 horas. También puedes escribirme directamente por email o WhatsApp.',
         name: 'Nombre completo',
@@ -191,7 +193,8 @@ const resources = {
         message: 'Mensaje',
         send: 'Enviar mensaje',
         successTitle: '¡Mensaje enviado!',
-        successDesc: 'Te responderé lo antes posible'
+        successDesc: 'Te responderé lo antes posible',
+        phoneDisclaimer: 'La atención telefónica se realiza únicamente con cita previa tras solicitud escrita (Email o WhatsApp).'
       }
     }
   },
@@ -376,6 +379,8 @@ const resources = {
       contact: {
         title: 'Contact',
         subtitle: 'Have questions or want to start your project? I am here to help',
+        helpTitle: 'We are here to help you',
+        helpDescription: 'The Tu Negocio Inmobiliario team is at your disposal to answer any questions. Whether about our services, training resources or any aspect related to your real estate investment journey, we will be happy to assist you.',
         formTitle: "Let's talk about your project",
         formDesc: 'Fill out the form and I will contact you within 24 hours. You can also write to me directly by email or WhatsApp.',
         name: 'Full name',
@@ -384,7 +389,8 @@ const resources = {
         message: 'Message',
         send: 'Send message',
         successTitle: 'Message sent!',
-        successDesc: 'I will respond as soon as possible'
+        successDesc: 'I will respond as soon as possible',
+        phoneDisclaimer: 'Phone support is available only by appointment after a written request (Email or WhatsApp).'
       }
     }
   },
@@ -569,6 +575,8 @@ const resources = {
       contact: {
         title: 'Kontakt',
         subtitle: 'Haben Sie Fragen oder möchten Sie Ihr Projekt starten? Ich bin hier, um zu helfen',
+        helpTitle: 'Wir sind hier, um Ihnen zu helfen',
+        helpDescription: 'Das Team von Tu Negocio Inmobiliario steht Ihnen zur Verfügung, um alle Fragen zu beantworten. Ob zu unseren Dienstleistungen, Schulungsressourcen oder zu jedem Aspekt Ihrer Immobilieninvestitionsreise - wir helfen Ihnen gerne weiter.',
         formTitle: 'Lassen Sie uns über Ihr Projekt sprechen',
         formDesc: 'Füllen Sie das Formular aus und ich werde mich innerhalb von 24 Stunden bei Ihnen melden. Sie können mir auch direkt per E-Mail oder WhatsApp schreiben.',
         name: 'Vollständiger Name',
@@ -577,7 +585,8 @@ const resources = {
         message: 'Nachricht',
         send: 'Nachricht senden',
         successTitle: 'Nachricht gesendet!',
-        successDesc: 'Ich werde so schnell wie möglich antworten'
+        successDesc: 'Ich werde so schnell wie möglich antworten',
+        phoneDisclaimer: 'Telefonische Unterstützung ist nur nach vorheriger schriftlicher Anfrage (E-Mail oder WhatsApp) mit Terminvereinbarung verfügbar.'
       }
     }
   }

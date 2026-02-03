@@ -115,7 +115,7 @@ const HomeHero = () => {
           <img 
             src={logoTni} 
             alt="Tu Negocio Inmobiliario" 
-            className="relative z-10 w-full max-w-md md:max-w-lg object-contain drop-shadow-xl"
+            className="relative z-10 w-full max-w-[140px] md:max-w-[180px] object-contain drop-shadow-xl"
           />
         </motion.div>
       </motion.div>
